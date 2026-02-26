@@ -1,5 +1,3 @@
-import matplotlib
-matplotlib.use("Agg")
 import matplotlib as plt
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -21,6 +19,8 @@ def main():
         "STR", "NOR", "LAW", "ALB"
     ]
 
+    ## 2500 - 2900
+
     db = query_db()
     tel_select_cols = [telemetry_columns[i] for i in [1, 3, 4]]
 
@@ -33,7 +33,7 @@ def main():
     plt.xlabel('X')
     plt.ylabel('Y')
     plt.title('Distance Metric Over Space')
-    plt.show()
-
+    plt.savefig("canadian_gp_rus_lap70.png", dpi=300)
+    
 if __name__=="__main__":
     main()

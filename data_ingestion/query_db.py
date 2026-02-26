@@ -45,24 +45,16 @@ class query_db():
     def fetch_driver_telemetry(self, race_name, driver_name, telemetry_column):
         tel_index_list = self._fetch_driver_metadata(race_name, driver_name)
         telemetry_column_string = ', '.join(map(str, telemetry_column))
-        self.db.cursor.execute(f"SELECT ({telemetry_column_string}) FROM telemetry_data WHERE tel_index IN ({tel_index_list});")
+        self.db.cursor.execute(f"SELECT {telemetry_column_string} FROM telemetry_data WHERE tel_index IN ({tel_index_list});")
 
         records = self.db.cursor.fetchall()
-        resulting_list = []
 
-        for record in records:
-            temp_record = record[0]
-            if(len(telemetry_column) != 1):
-                temp_record = ast.literal_eval(temp_record)
-                resulting_list.append([temp_record[i] for i in range(len(temp_record))])
-            else:
-                resulting_list.append(temp_record)
-            # print([record[0][i] for i in range(len(record))])
+        if not records:
+            print(f"No telemetry data found for {driver_name} at {race_name}")
+            return pd.DataFrame(columns=telemetry_column)
 
-        df = pd.DataFrame(resulting_list, columns=telemetry_column)
-
+        df = pd.DataFrame(records, columns=telemetry_column)
         print("\nReturning Pandas DataFrame of requested data")
-
         return df
     
     #GOOD for Clustering
@@ -81,23 +73,16 @@ class query_db():
         tel_index_list = ', '.join(map(str, records_refined))
 
         telemetry_column_string = ', '.join(map(str, telemetry_column))
-        self.db.cursor.execute(f"SELECT ({telemetry_column_string}) FROM telemetry_data WHERE tel_index IN ({tel_index_list});")
+        self.db.cursor.execute(f"SELECT {telemetry_column_string} FROM telemetry_data WHERE tel_index IN ({tel_index_list});")
 
         records = self.db.cursor.fetchall()
-        resulting_list = []
 
-        for record in records:
-            temp_record = record[0]
-            if(len(telemetry_column) != 1):
-                temp_record = ast.literal_eval(temp_record)
-                resulting_list.append([temp_record[i] for i in range(len(temp_record))])
-            else:
-                resulting_list.append(temp_record)
+        if not records:
+            print(f"No telemetry data found for {driver_name}, lap {lap_num} at {race_name}")
+            return pd.DataFrame(columns=telemetry_column)
 
-        df = pd.DataFrame(resulting_list, columns=telemetry_column)
-
+        df = pd.DataFrame(records, columns=telemetry_column)
         print("\nReturning Pandas DataFrame of requested data")
-
         return df
 
     
