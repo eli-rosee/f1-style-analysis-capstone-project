@@ -1,378 +1,445 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>F1 Telemetry Dashboard</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+	<meta charset="UTF-8">
+	<title>F1 Telemetry Dashboard</title>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-    }
+		.container {
+			display: flex;
+			flex-direction: column;
+			min-height: 100%;
+		}
+	/* ----------------- Panels ----------------- */
+		.panel:nth-child(1) { /*Driver Selection*/
+      			border-bottom: 1px solid #ddd;
+      			padding: 10px;
+      			box-sizing: border-box;
+    		}
 
-    /* ----------------- Panels ----------------- */
-    .panel:nth-child(1) { /*Driver Selection*/
-      border-bottom: 1px solid #ddd;
-      padding: 10px;
-      box-sizing: border-box;
-    }
+    		.panel:nth-child(2) { /*Stat Blocks*/
+      			border-bottom: 1px solid #ddd;
+      			padding: 10px;
+      			box-sizing: border-box;
+    		}
 
-    .panel:nth-child(2) { /*Stat Blocks*/
-      border-bottom: 1px solid #ddd;
-      padding: 10px;
-      box-sizing: border-box;
-    }
+    		.panel:nth-child(3) { /*Map Visuals*/
+      			border-bottom: none;
+      			padding: 10px;
+      			box-sizing: border-box;
+    		}
+	
+	/* ----------------- Driver Header ----------------- */
+    		.driver-header h1 {
+      			margin: 0 0 5px 0;
+    		}
 
-    .panel:nth-child(3) { /*Map Visuals*/
-      border-bottom: none;
-      padding: 10px;
-      box-sizing: border-box;
-    }
+    		.driver-header p {
+      			margin: 0 0 10px 0;
+      			font-weight: bold;
+    		}
 
-    /* ----------------- Driver Header ----------------- */
-    .driver-header h1 {
-      margin: 0 0 5px 0;
-    }
+    		.teams-container {
+      			display: flex;
+      			gap: 12px;
+      			overflow-x: auto;
+      			padding-bottom: 8px;
+    		}
 
-    .driver-header p {
-      margin: 0 0 10px 0;
-      font-weight: bold;
-    }
+    		.team-block {
+      			min-width: 132px;
+      			height: 132px;
+      			border: 2px solid #ccc;
+      			border-radius: 8px;
+      			background: #f9f9f9;
+      			display: flex;
+      			flex-direction: column;
+      			justify-content: space-between;
+      			padding: 6px;
+      			box-sizing: border-box;
+    		}
 
-    .teams-container {
-      display: flex;
-      gap: 12px;
-      overflow-x: auto;
-      padding-bottom: 8px;
-    }
+    		.team-name {
+      			text-align: center;
+      			font-size: 0.8rem;
+      			font-weight: bold;
+      			margin-bottom: 4px;
+    		}
 
-    .team-block {
-      min-width: 132px;
-      height: 132px;
-      border: 2px solid #ccc;
-      border-radius: 8px;
-      background: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 6px;
-      box-sizing: border-box;
-    }
+    		.team-block button {
+      			flex: 1;
+      			margin: 3px 0;
+      			border: none;
+      			border-radius: 4px;
+      			cursor: pointer;
+      			font-weight: bold;
+      			font-size: 0.95rem;
+      			background: #e10600;
+      			color: white;
+    		}
 
-    .team-name {
-      text-align: center;
-      font-size: 0.8rem;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
+    		.team-block button:hover {
+      			background: #b80500;
+    		}
 
-    .team-block button {
-      flex: 1;
-      margin: 3px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 0.95rem;
-      background: #e10600;
-      color: white;
-    }
+    		.team-block button.selected {
+      			background: #005ce6;
+    		}
+	
+	/* ----------------- Middle Panel  ----------------- */
+    		#middle-panel {
+	    		display: block;
+	    		gap: 10px;
+	    		box-sizing: border-box;
+    		}
 
-    .team-block button:hover {
-      background: #b80500;
-    }
+    		.driver-stats {
+	    		width: 95%;
+	    		max-width: 2000px;
+	    		margin: 10px auto;
+	    		border: 2px solid #555;
+	    		border-radius: 10px;
+	    		background: #f0f0f5;
+	    		padding: 15px;
+	    		box-sizing: border-box;
+			
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+    		}
 
-    .team-block button.selected {
-      background: #005ce6;
-    }
+    		.driver-stats h2 {
+			flex-basis: 100%;
+      			margin: 0 0 10px 0;
+      			text-align: center;
+    		}
 
-    /* ----------------- Middle Panel / Driver Stats ----------------- */
-    #middle-panel {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 10px;
-      box-sizing: border-box;
-      overflow-x: auto;
-    }
+		.charts-row {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+    			flex-wrap: nowrap;     
+    			overflow-x: auto;      
+		}
 
-    .driver-stats {
-      width: 300px;
-      height: 380px;
-      border: 2px solid #555;
-      border-radius: 10px;
-      background: #f0f0f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 15px;
-      box-sizing: border-box;
-    }
+		.charts-row canvas {
+			flex-shrink: 0;
+			width: 200px !important;
+			height: 200px !important;
+			display: block;
+		}
 
-    .driver-stats h2 {
-      margin: 0 0 10px 0;
-      font-size: 1.3rem;
-      text-align: center;
-    }
+		.charts-row canvas.radar {
+			width: 260px !important;
+			height: 260px !important;
+		}
 
-    /*---------Map Visualization Panel-------------*/
-    .map-controls {
-  	display: flex;
-  	align-items: center;
-  	gap: 15px;
-  	padding: 5px 0;
-    }
 
-    .track-dropdown {
-  	padding: 8px 12px;
-  	border-radius: 5px;
-  	border: 1px solid #ccc;
-  	font-size: 1rem;
-  	background-color: white;
-  	cursor: pointer;
-  	flex: 1;
-  	max-width: 400px;
-    }
+	/*---------Map Visualization Panel-------------*/
+    		.map-controls {
+  			display: flex;
+  			align-items: center;
+  			gap: 15px;
+  			padding: 5px 0;
+    		}
 
-    .track-dropdown:focus {
-  	outline: none;
-  	border-color: #e10600; /* F1 Red */
-    }
-  </style>
+    		.track-dropdown {
+  			padding: 8px 12px;
+  			border-radius: 5px;
+  			border: 1px solid #ccc;
+  			font-size: 1rem;
+  			background-color: white;
+  			cursor: pointer;
+  			flex: 1;
+  			max-width: 400px;
+    		}
+
+    		.track-dropdown:focus {
+  			outline: none;
+  			border-color: #e10600; /* F1 Red */
+    		}
+  	</style>
 </head>
 <body>
-  <div class="container">
+	<div class="container">
 
-    <!-- Top section -->
-    <div class="panel">
-      <div class="driver-header">
-        <h1>F1 Telemetry Insights Visual Dashboard</h1>
-        <p>Driver Selection</p>
-        <div class="teams-container">
-          <div class="team-block">
-            <div class="team-name">Red Bull Racing</div>
-            <button>Verstappen</button>
-            <button>Tsunoda</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">Ferrari</div>
-            <button>Leclerc</button>
-            <button>Hamilton</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">Mercedes</div>
-            <button>Antonelli</button>
-            <button>Russell</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">McLaren</div>
-            <button>Piastri</button>
-            <button>Norris</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">Aston Martin</div>
-            <button>Alonso</button>
-            <button>Stroll</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">Alpine</div>
-            <button>Gasly</button>
-            <button>Colapinto</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">Williams</div>
-            <button>Sainz</button>
-            <button>Albon</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">Haas F1 Team</div>
-            <button>Ocon</button>
-            <button>Bearman</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">Racing Bulls</div>
-            <button>Lawson</button>
-            <button>Hadjar</button>
-          </div>
-          <div class="team-block">
-            <div class="team-name">Kick Sauber</div>
-            <button>Bortoleto</button>
-            <button>Hülkenberg</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    		<!-- Top section -->
+    		<div class="panel">
+      			<div class="driver-header">
+        			<h1>F1 Telemetry Insights Visual Dashboard</h1>
+        			<p>Driver Selection</p>
+				<div class="teams-container">
+					<div class="team-block">
+						<div class="team-name">Red Bull Racing</div>
+						<button>Verstappen</button>
+							<button>Tsunoda</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">Ferrari</div>
+						<button>Leclerc</button>
+						<button>Hamilton</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">Mercedes</div>
+						<button>Antonelli</button>
+						<button>Russell</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">McLaren</div>
+						<button>Piastri</button>
+						<button>Norris</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">Aston Martin</div>
+						<button>Alonso</button>
+						<button>Stroll</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">Alpine</div>
+						<button>Gasly</button>
+						<button>Colapinto</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">Williams</div>
+						<button>Sainz</button>
+						<button>Albon</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">Haas F1 Team</div>
+						<button>Ocon</button>
+						<button>Bearman</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">Racing Bulls</div>
+						<button>Lawson</button>
+						<button>Hadjar</button>
+					</div>
+					<div class="team-block">
+						<div class="team-name">Kick Sauber</div>
+						<button>Bortoleto</button>
+						<button>Hülkenberg</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!------- Middle section -------->
+		<div class="panel" id="middle-panel"> <!-- Driver stats will be injected here --> </div>
 
-    <!-- Middle section -->
-    <div class="panel" id="middle-panel">
-      <!-- Driver statistic blocks will be injected here -->
-    </div>
+		<!------- Bottom section -------->
+		<div class="panel">
+			<div class="map-controls">
+				<label for="track-select"><strong>Map Visualization:</strong></label>
+				<select id="track-select" class="track-dropdown">
+					<option value="default">Select a track</option>
+					<hr>
+					<option value="canada">Montreal, Canada - Circuit Gilles Villeneuve</option>
+					<option value="australia">Melbourne, Australia - Albert Park Circuit</option>
+					<option value="china">Shanghai, China - Shanghai International Circuit</option>
+					<option value="japan">Suzuka, Japan - Suzuka Circuit</option>
+					<option value="bahrain">Sakhir, Bahrain - Bahrain International Circuit</option>
+					<option value="saudi">Jeddah, Saudi Arabia - Jeddah Corniche Circuit</option>
+					<option value="miami">Miami, USA - Miami International Autodrome</option>
+					<option value="imola">Imola, Italy - Autodromo Enzo e Dino Ferrari</option>
+					<option value="monaco">Monaco, Monaco - Circuit de Monaco</option>
+					<option value="spain">Barcelona, Spain - Circuit de Barcelona-Catalunya</option>
+					<option value="austria">Spielberg, Austria - Red Bull Ring</option>
+					<option value="uk">Silverstone, United Kingdom - Silverstone Circuit</option>
+					<option value="belgium">Spa, Belgium - Circuit de Spa-Francorchamps</option>
+					<option value="hungary">Budapest, Hungary - Hungaroring</option>
+					<option value="netherlands">Zandvoort, Netherlands - Circuit Zandvoort</option>
+					<option value="italy">Monza, Italy - Autodromo Nazionale Monza</option>
+					<option value="azerbaijan">Baku, Azerbaijan - Baku City Circuit</option>
+					<option value="singapore">Singapore, Singapore - Marina Bay Street Circuit</option>
+					<option value="usa_austin">Austin, USA - Circuit of the Americas</option>
+					<option value="mexico">Mexico City, Mexico - Autódromo Hermanos Rodríguez</option>
+					<option value="brazil">Sao Paulo, Brazil - Interlagos Circuit</option>
+					<option value="vegas">Las Vegas, USA - Las Vegas Strip Circuit</option>
+					<option value="qatar">Lusail, Qatar - Lusail International Circuit</option>
+					<option value="abudhabi">Abu Dhabi, UAE - Yas Marina Circuit</option>
+				</select>
+			</div>
+			<div id="map-display" style="margin-top: 15px; height: 200px; background: #eee; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666;">
+			Select a track to view telemetry map
+			</div>
+		</div>
+	</div>
+	
+	<!--Chart.js Import-->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- Bottom section -->
-    <div class="panel">
-	<div class="map-controls">
-		<label for="track-select"><strong>Map Visualization:</strong></label>
-    		<select id="track-select" class="track-dropdown">
-      			<option value="default">Select a track</option>
-      			<hr>
-			<option value="canada">Montreal, Canada - Circuit Gilles Villeneuve</option>
-      			<option value="australia">Melbourne, Australia - Albert Park Circuit</option>
-      			<option value="china">Shanghai, China - Shanghai International Circuit</option>
-      			<option value="japan">Suzuka, Japan - Suzuka Circuit</option>
-      			<option value="bahrain">Sakhir, Bahrain - Bahrain International Circuit</option>
-      			<option value="saudi">Jeddah, Saudi Arabia - Jeddah Corniche Circuit</option>
-      			<option value="miami">Miami, USA - Miami International Autodrome</option>
-      			<option value="imola">Imola, Italy - Autodromo Enzo e Dino Ferrari</option>
-      			<option value="monaco">Monaco, Monaco - Circuit de Monaco</option>
-      			<option value="spain">Barcelona, Spain - Circuit de Barcelona-Catalunya</option>
-      			<option value="austria">Spielberg, Austria - Red Bull Ring</option>
-      			<option value="uk">Silverstone, United Kingdom - Silverstone Circuit</option>
-      			<option value="belgium">Spa, Belgium - Circuit de Spa-Francorchamps</option>
-      			<option value="hungary">Budapest, Hungary - Hungaroring</option>
-      			<option value="netherlands">Zandvoort, Netherlands - Circuit Zandvoort</option>
-      			<option value="italy">Monza, Italy - Autodromo Nazionale Monza</option>
-      			<option value="azerbaijan">Baku, Azerbaijan - Baku City Circuit</option>
-      			<option value="singapore">Singapore, Singapore - Marina Bay Street Circuit</option>
-      			<option value="usa_austin">Austin, USA - Circuit of the Americas</option>
-      			<option value="mexico">Mexico City, Mexico - Autódromo Hermanos Rodríguez</option>
-      			<option value="brazil">Sao Paulo, Brazil - Interlagos Circuit</option>
-      			<option value="vegas">Las Vegas, USA - Las Vegas Strip Circuit</option>
-      			<option value="qatar">Lusail, Qatar - Lusail International Circuit</option>
-      			<option value="abudhabi">Abu Dhabi, UAE - Yas Marina Circuit</option>
-    		</select>
-  	</div>
-  	<div id="map-display" style="margin-top: 15px; height: 200px; background: #eee; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666;">
-    		Select a track to view telemetry map
-  	</div>
-  </div> 
+  	<!-- ----------------- JS for Multi-Driver Selection ----------------- -->
+  	<script>
+		const charts = {};
+		const driverButtons = document.querySelectorAll('.team-block button');
+	  	const middlePanel = document.getElementById('middle-panel');
+	  	const selectedDrivers = new Set();
 
-  </div>
+	  	driverButtons.forEach(button => {
+		  	button.addEventListener('click', () => {
+			  	const driverName = button.textContent;
+			  	if (selectedDrivers.has(driverName)) {
+				  	selectedDrivers.delete(driverName);
+				  	button.classList.remove('selected');
+				  	const driverBlock = document.getElementById(`driver-${driverName.replace(/\s/g, '-')}`);
+				  	if (charts[driverName]) {
+					  	charts[driverName].destroy();
+					  	delete charts[driverName];
+				  	}
+				  	if (driverBlock) driverBlock.remove();
+			  	} else {
+					selectedDrivers.add(driverName);
+	  				button.classList.add('selected');
+					
+					// Create Driver Statistics Panel for selected driver
+					const statsBlock = document.createElement('div');
+					statsBlock.classList.add('driver-stats');
+          				statsBlock.id = `driver-${driverName.replace(/\s/g, '-')}`;
 
-  <!--Chart.js Import-->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          				const nameLabel = document.createElement('h2'); //Name of the selected driver
+          				nameLabel.textContent = driverName;
+          				statsBlock.appendChild(nameLabel);
+					
+					// Create container for the charts that will be in the Driver Statistics Panel
+					const chartsRow = document.createElement('div');
+					chartsRow.classList.add('charts-row');
+					statsBlock.appendChild(chartsRow);
 
-  <!-- ----------------- JS for Multi-Driver Selection ----------------- -->
-  <script>
-	  const charts = {};
-	  const driverButtons = document.querySelectorAll('.team-block button');
-	  const middlePanel = document.getElementById('middle-panel');
-	  const selectedDrivers = new Set();
+					// Creates the 6 Pie charts with temp data
+					const pieTitles = [
+  						"Relative Distance",
+  						"RPM",
+  						"Gear",
+  						"Throttle",
+  						"Brake",
+  						"Acceleration"
+					];
+					
+					for (let i = 0; i < 6; i++) {
+						const pieCanvas = document.createElement('canvas');
+						pieCanvas.id = `pie-${driverName}-${i}`;
+						chartsRow.appendChild(pieCanvas);
 
-	  driverButtons.forEach(button => {
-		  button.addEventListener('click', () => {
-			  const driverName = button.textContent;
-			  if (selectedDrivers.has(driverName)) {
-				  selectedDrivers.delete(driverName);
-				  button.classList.remove('selected');
-				  const driverBlock = document.getElementById(`driver-${driverName.replace(/\s/g, '-')}`);
-				  if (charts[driverName]) {
-					  charts[driverName].destroy();
-					  delete charts[driverName];
-				  }
-				  if (driverBlock) driverBlock.remove();
-			  } else {
-	  selectedDrivers.add(driverName);
-	  button.classList.add('selected');
+						const ctxPie = pieCanvas.getContext('2d');
+						
+						new Chart(ctxPie, {
+							type: 'pie',
+							data: {
+								labels: ['Cluster A', 'Cluster B', 'Cluster C'],
+								datasets: [{
+									data: [
+										Math.random() * 100,
+          									Math.random() * 100,
+          									Math.random() * 100
+									],
+									backgroundColor: [
+										'rgba(225, 6, 0, 0.8)',
+          									'rgba(0, 92, 230, 0.8)',
+          									'rgba(255, 193, 7, 0.8)'
+									]
+								}]
+							},
+							options: {
+								responsive: false,
+								plugins: {
+                                                                	legend: {
+                                                                        	display: false
+                                                                	},
+									title: {
+										display: true,
+										text: pieTitles[i],
+										font: {
+											size: 20
+										}
+									}
 
-	  const statsBlock = document.createElement('div');
-	  statsBlock.classList.add('driver-stats');
-          statsBlock.id = `driver-${driverName.replace(/\s/g, '-')}`;
+                                                        	}
+							}
+						});
+					}
 
-          const nameLabel = document.createElement('h2');
-          nameLabel.textContent = driverName;
-          statsBlock.appendChild(nameLabel);
 
-          // Create canvas for radar chart
-	  const chartCanvas = document.createElement('canvas');
-	  chartCanvas.id = `radar-chart-${driverName.replace(/\s/g, '-')}`;
-	  chartCanvas.style.width = '100%';
-	  chartCanvas.style.height = '250px';
+          				// Create canvas for radar chart
+	  				const radarCanvas = document.createElement('canvas');
+	  				radarCanvas.id = `radar-${driverName}`;
+					radarCanvas.classList.add('radar');
+					chartsRow.appendChild(radarCanvas);
+	  				
+					const ctxRadar = radarCanvas.getContext('2d');
 
-	  statsBlock.appendChild(chartCanvas);
-	  middlePanel.appendChild(statsBlock);
+	  				charts[driverName] = new Chart(ctxRadar, {
+						type: 'radar',
+						data: {
+							labels: ['Speed', 'Acceleration', 'Braking', 'Cornering', 'Consistency'],
+							datasets: [{
+								data: [
+									Math.random() * 100,
+					  				Math.random() * 100,
+					  				Math.random() * 100,
+					  				Math.random() * 100,
+					  				Math.random() * 100
+								],
+								fill: true,
+								backgroundColor: 'rgba(225, 6, 0, 0.2)',
+								borderColor: 'rgba(225, 6, 0, 1)',
+								pointBackgroundColor: 'rgba(225, 6, 0, 1)'
+							}]
+						},
+						options: {
+							responsive: false,
+							plugins: {
+								legend: {
+									display: false
+								}
+							},
+							scales: {
+								r: {
+									beginAtZero: true,
+									min: 0,
+									max: 100
+								}
+							}
+						}
+					});
+					middlePanel.appendChild(statsBlock);
 
-	  // Create radar chart
-	  const ctx = chartCanvas.getContext('2d');
+				}
+			});
+		});
 
-	  charts[driverName] = new Chart(ctx, {
-		  type: 'radar',
-		  data: {
-			  labels: ['Speed', 'Acceleration', 'Braking', 'Cornering', 'Consistency'],
-			  datasets: [{
-				  data: [
-					  Math.random() * 100,
-					  Math.random() * 100,
-					  Math.random() * 100,
-					  Math.random() * 100,
-					  Math.random() * 100
-				  ],
-				  fill: true,
-				  backgroundColor: 'rgba(225, 6, 0, 0.2)',
-				  borderColor: 'rgba(225, 6, 0, 1)',
-				  pointBackgroundColor: 'rgba(225, 6, 0, 1)'
-			  }]
-		  },
-		  options: {
-			  responsive: true,
-			  maintainAspectRatio: false,
-			  plugins: {
-				  legend: {
-					  display: false
-				  }
-			  },
-			  scales: {
-				  r: {
-					  beginAtZero: true,
-					  min: 0,
-					  max: 100
-				  }
-			  }
-		  }
-	  });
+		const trackSelect = document.getElementById('track-select');
+    		const mapDisplay = document.getElementById('map-display');
+    		const panels = document.querySelectorAll('.panel');
+    		const mapPanel = panels[panels.length - 1];
 
-          middlePanel.appendChild(statsBlock);
-        }
-      });
-    });
+    		trackSelect.addEventListener('change', (e) => {
+    			const selectedValue = e.target.value;
 
-    const trackSelect = document.getElementById('track-select');
-    const mapDisplay = document.getElementById('map-display');
-    const panels = document.querySelectorAll('.panel');
-    const mapPanel = panels[panels.length - 1];
-
-    trackSelect.addEventListener('change', (e) => {
-    	const selectedValue = e.target.value;
-
-    	if (selectedValue === 'canada') {
-    		mapDisplay.style.height = 'auto';
-    		mapDisplay.style.display = 'block';
-    		mapDisplay.style.background = 'transparent';
+    			if (selectedValue === 'canada') {
+    				mapDisplay.style.height = 'auto';
+    				mapDisplay.style.display = 'block';
+    				mapDisplay.style.background = 'transparent';
     
-    		mapDisplay.innerHTML = `
-      		<div style="text-align: center; padding: 10px;">
-        		<img src="track_images/CircuitGillesVilleneuve.png" 
-             			alt="Circuit Gilles Villeneuve" 
-             			style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      		</div>`;
-    	} else {
-    		// Revert to placeholder style if any other track is selected
-    		mapDisplay.style.height = '200px';
-    		mapDisplay.style.display = 'flex';
-    		mapDisplay.style.background = '#eee';
-    		mapDisplay.innerHTML = `Select a track to view telemetry map`;
-    	}
-    });
-  </script>
-
-
+    				mapDisplay.innerHTML = `
+      					<div style="text-align: center; padding: 10px;">
+        					<img src="track_images/CircuitGillesVilleneuve.png" 
+             					alt="Circuit Gilles Villeneuve" 
+             					style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      					</div>`;
+			} else {
+    				// Revert to placeholder style if any other track is selected
+				mapDisplay.style.height = '200px';
+    				mapDisplay.style.display = 'flex';
+    				mapDisplay.style.background = '#eee';
+    				mapDisplay.innerHTML = `Select a track to view telemetry map`;
+    			}
+    		});
+	</script>
 </body>
 </html>
 
