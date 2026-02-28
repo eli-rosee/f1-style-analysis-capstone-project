@@ -61,14 +61,61 @@ def performSilhouette():
     #save as a png
     plt.savefig('silhouette_coefficient.png', dpi=300, bbox_inches='tight')
 
+#Data Visualization
+#Places the cluster results on a scatter plot and saves it as a png
+def plotData():
+    plt.figure(figsize=(12, 7))
+    plt.style.use("fivethirtyeight")
 
+    #Scatter plot optimized for 41,000 points
+    #Use s=1 and alpha=0.1 so that darker areas represent more frequent RPM levels
+    plt.scatter(
+        range(len(scaled_features)), 
+        scaled_features, 
+        c=kmeans.labels_, 
+        cmap='viridis', 
+        s=1,            # Very small points to prevent a "blurry blob"
+        alpha=0.1,      # High transparency to show data density
+        rasterized=True # Helps keep the file size manageable
+    )
+
+    #Centroid Visualization
+    # Since this is 1D data (1 data point at a time), centroids are "levels." 
+    #Draw them as horizontal lines shows the "thresholds" found by K-means.
+    for i, center in enumerate(kmeans.cluster_centers_):
+        plt.axhline(
+            y=center, 
+            color='red', 
+            linestyle='--', 
+            linewidth=2, 
+            alpha=0.8,
+            label=f'Centroid {i}' if i == 0 else "" # Only label the first for the legend
+        )
+
+    #Labels and Formatting
+    plt.title("K-Means Clustering: Hamilton RPM Distribution (Canada GP)")
+    plt.xlabel("Time Sequence (Data Point Index)")
+    plt.ylabel("Standardized RPM")
+    plt.legend(loc='upper right')
+    plt.grid(True, linestyle=':', alpha=0.5)
+
+    #Save with high resolution
+    plt.savefig('clustering/nick_clustering/telemetry_clusters.png', dpi=300, bbox_inches='tight')
+    print("Plot saved to 'clustering/nick_clustering/telemetry_clusters.png'")
+
+#declare race and driver name
+raceName = "CAN"
+driverName = "HAM"
+
+#determine what datapoint the clustering will be on
+dataPoint = "rpm"
 
 #Get data from the database
-telColumns = ["rpm"]
+telColumns = [f"{dataPoint}"]
 queryDB = query_db()
 
 #get a list of pandas dataframes
-telemetryData = queryDB.fetch_driver_telemetry("CAN", "HAM", telColumns)
+telemetryData = queryDB.fetch_driver_telemetry(raceName, driverName, telColumns)
 
 #extract features from giant dataframe and drop missing values
 featuresRaw = telemetryData[telColumns].dropna()
@@ -112,43 +159,23 @@ kmeans.cluster_centers_
 kmeans.n_iter_
 
 #data visualization
+plotData()
 
-# 1. Create a larger, cleaner figure
-plt.figure(figsize=(12, 7))
-plt.style.use("fivethirtyeight")
+#----------------------------------------------------------
+#Save results to a .csv file
 
-# 2. Scatter plot optimized for 41,000 points
-# We use s=1 and alpha=0.1 so that darker areas represent more frequent RPM levels
-plt.scatter(
-    range(len(scaled_features)), 
-    scaled_features, 
-    c=kmeans.labels_, 
-    cmap='viridis', 
-    s=1,            # Very small points to prevent a "blurry blob"
-    alpha=0.1,      # High transparency to show data density
-    rasterized=True # Helps keep the file size manageable
-)
+# Create a copy of the features used for clustering
+results_df = featuresRaw.copy()
 
-# 3. Better Centroid Visualization
-# Since this is 1D data (RPM only), centroids are "levels." 
-# Drawing them as horizontal lines shows the "RPM thresholds" found by K-means.
-for i, center in enumerate(kmeans.cluster_centers_):
-    plt.axhline(
-        y=center, 
-        color='red', 
-        linestyle='--', 
-        linewidth=2, 
-        alpha=0.8,
-        label=f'Centroid {i}' if i == 0 else "" # Only label the first for the legend
-    )
+# Add the metadata columns
+results_df['race'] = raceName
+results_df['driver'] = driverName
+results_df['cluster_label'] = kmeans.labels_
 
-# 4. Labels and Formatting
-plt.title("K-Means Clustering: Hamilton RPM Distribution (Canada GP)")
-plt.xlabel("Time Sequence (Data Point Index)")
-plt.ylabel("Standardized RPM")
-plt.legend(loc='upper right')
-plt.grid(True, linestyle=':', alpha=0.5)
+#determine filepath
+csv_filename = f"clustering/nick_clustering/{raceName}_{driverName}_{dataPoint}_clusters.csv"
 
-# 5. Save with high resolution
-plt.savefig('clustering/nick_clustering/telemetry_clusters.png', dpi=300, bbox_inches='tight')
-print("Plot saved to 'clustering/nick_clustering/telemetry_clusters.png'")
+#index = False prevents pandas from adding an extra 'unnamed' column for the row numbers
+results_df.to_csv(csv_filename, index=False)
+
+print(f"Results saved to {csv_filename}")
