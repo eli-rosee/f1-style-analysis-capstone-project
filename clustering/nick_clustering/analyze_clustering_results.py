@@ -33,14 +33,14 @@ summary_stats['driver'] = driverName
 #rename the columns to be descriptive
 summary_stats = summary_stats.rename(columns={
     'cluster_label': 'Cluster',
-    'min': 'Min_RPM',
-    'max': 'Max_RPM',
-    'mean': 'Avg_RPM',
+    'min': 'Min',
+    'max': 'Max',
+    'mean': 'Avg',
     'percentage': 'Percentage_of_Lap'
 })
 
 #reorder the columns to match exactly what you requested
-final_summary_df = summary_stats[['race', 'driver', 'Cluster', 'Percentage_of_Lap', 'Min_RPM', 'Max_RPM', 'Avg_RPM']]
+final_summary_df = summary_stats[['race', 'driver', 'Cluster', 'Percentage_of_Lap', 'Min', 'Max', 'Avg']]
 
 #print results to the screen
 print("\n")
@@ -53,7 +53,7 @@ print("-" * 60)
 #iterate through the summary dataframe to print the stats
 for index, row in final_summary_df.iterrows():
     print(f"Cluster {int(row['Cluster'])}: {row['Percentage_of_Lap']:.1f}% of data")
-    print(f"  -> RPM Range: {row['Min_RPM']:.0f} to {row['Max_RPM']:.0f} (Avg: {row['Avg_RPM']:.0f})")
+    print(f"  -> Range: {row['Min']:.0f} to {row['Max']:.0f} (Avg: {row['Avg']:.0f})")
 
 print("-" * 60)
 

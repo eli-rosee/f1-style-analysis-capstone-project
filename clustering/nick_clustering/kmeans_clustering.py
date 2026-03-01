@@ -93,7 +93,7 @@ def plotData():
         )
 
     #Labels and Formatting
-    plt.title("K-Means Clustering: Hamilton RPM Distribution (Canada GP)")
+    plt.title(f"K-Means Clustering: {driverName} {dataPoint} Distribution ({raceName})")
     plt.xlabel("Time Sequence (Data Point Index)")
     plt.ylabel("Standardized RPM")
     plt.legend(loc='upper right')
@@ -108,7 +108,7 @@ raceName = "CAN"
 driverName = "HAM"
 
 #determine what datapoint the clustering will be on
-dataPoint = "rpm"
+dataPoint = "brake"
 
 #Get data from the database
 telColumns = [f"{dataPoint}"]
@@ -129,7 +129,7 @@ scaled_features = scaler.fit_transform(featuresRaw)
 #Instantiate the Kmeans class
 kmeans = KMeans(
     init="random",
-    n_clusters=3,
+    n_clusters=2,
     n_init=10, #number of kmeans runs to preform. Run with lowest SSE value is returned
     max_iter=300, #max number of iterations per run
     random_state=42
