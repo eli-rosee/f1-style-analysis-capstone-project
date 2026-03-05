@@ -10,6 +10,9 @@ input_csv = f"clustering/nick_clustering/{raceName}_{driverName}_{dataPoint}_clu
 #file path of csv which will be output by the program
 output_csv = f"clustering/nick_clustering/{raceName}_{driverName}_{dataPoint}_cluster_summary.csv"
 
+#automatically put clustering results in the frontend folder
+#output_csv = f"frontend/clustering_results/{raceName}_{driverName}_{dataPoint}_cluster_summary.csv"
+
 #make sure file exists before reading it
 if not os.path.exists(input_csv):
     raise Exception(f"Error: Could not find the file '{input_csv}'.")
