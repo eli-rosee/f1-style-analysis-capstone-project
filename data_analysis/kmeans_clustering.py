@@ -181,6 +181,69 @@ def export_clusters_to_csv(race, clusterVariables, filename="clustering_results.
     else:
         print("Error. No data found to export.")
 
+#Generates a statistical summary (Min, Max, Avg) for the clustered variable across all drivers and saves it to a CSV.
+def export_cluster_summary(race, clusterVariables, filename="cluster_summary.csv"):
+    print(f"Generating clustering results summary for {clusterVariables}...")
+    
+    all_summaries = []
+
+    for driver in race.drivers:
+        driver_laps = []
+        
+        #use enumerate to get lap_idx (starting at 1) without using .index()
+        for lap_idx, lap_df in enumerate(race.interp_dict[driver], start=1):
+            temp_df = lap_df.copy()
+            
+            #find the correct 5-lap chunk for denormalization
+            lap_inc = lap_idx + (5 - lap_idx % 5)
+            min_d, max_d = race._get_min_max_driver_lap(driver, lap_inc - 5, lap_inc)
+            
+            #denormalize the variables
+            for var in clusterVariables:
+                temp_df[var] = (temp_df[var] * (max_d[var] - min_d[var])) + min_d[var]
+            
+            driver_laps.append(temp_df)
+        
+        if not driver_laps:
+            continue
+            
+        #combine all laps for this driver into one DataFrame for analysis
+        df_combined = pd.concat(driver_laps)
+        total_points = len(df_combined)
+
+        #calculate stats for every variable in clusterVariables
+        for var in clusterVariables:
+            #group by the cluster labels and aggregate
+            stats = df_combined.groupby('cluster_label')[var].agg(['count', 'min', 'max', 'mean']).reset_index()
+            
+            stats['Percentage_of_Lap'] = (stats['count'] / total_points) * 100
+            stats['race'] = race.race_name
+            stats['driver'] = driver
+            stats['variable'] = var
+            
+            #rename for the final output
+            stats = stats.rename(columns={
+                'cluster_label': 'Cluster',
+                'min': 'Min',
+                'max': 'Max',
+                'mean': 'Avg'
+            })
+            
+            all_summaries.append(stats)
+
+    #finalize and save
+    if all_summaries:
+        final_df = pd.concat(all_summaries, ignore_index=True)
+        #reorder columns
+        cols = ['race', 'driver', 'variable', 'Cluster', 'Percentage_of_Lap', 'Min', 'Max', 'Avg']
+        final_df = final_df[cols]
+        
+        final_df.to_csv(filename, index=False)
+        print(f"Summary saved to: {filename}")
+    else:
+        print("No data available to summarize.")
+
+
 def main():
     race_name = 'Canadian_Grand_Prix'
 
@@ -224,6 +287,9 @@ def main():
 
     #save cluster results to a .csv
     export_clusters_to_csv(race, clusterVariables)
+
+    #save summary of cluster results to a .csv
+    export_cluster_summary(race, clusterVariables)
 
 if __name__ == '__main__':
     main()
