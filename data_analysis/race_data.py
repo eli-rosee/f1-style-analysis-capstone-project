@@ -181,22 +181,31 @@ class RaceData:
                     df[col] = (df[col] - min_dict[col]) / (max_dict[col] - min_dict[col])
                     np.clip(df[col], 0, 1)
 
-    def _average_speed_check(self):
-        print("Checking speed thresholds...")
+    def _average_speed_check(self, iqr_multiplier=1.5):
+        print("Checking speed thresholds (lower tail IQR)...")
 
         for driver in self.drivers:
+            filtered_laps = []
+            lap_speeds = [np.mean(df['speed']) for df in self.interp_dict[driver]]
+
+            if len(lap_speeds) < 4:
+                continue
+
+            q1 = np.percentile(lap_speeds, 25)
+            q3 = np.percentile(lap_speeds, 75)
+            iqr = q3 - q1
+            lower_bound = q1 - iqr_multiplier * iqr
+
             filtered_laps = []
 
             for lap_num, df in enumerate(self.interp_dict[driver], start=1):
                 avg_speed = np.mean(df['speed'])
 
-                ## These arbitrary lap nums saw the highest proportion of slow laps among drivers
-                ## Safer to remove them for all drivers to not skew clusters
-                if(avg_speed <= 0.6 or lap_num == 1 or lap_num >= 66):
-                    print(f"  Dropping {driver} lap {lap_num} — too slow or filtered out lap number (1, 66+)")
+                if lap_num == 1 or avg_speed < lower_bound:
+                    print(f"  Dropping {driver} lap {lap_num} — outlier")
                 else:
                     filtered_laps.append(df)
-            
+
             self.interp_dict[driver] = filtered_laps
 
     def pca(self, n_components=0.95):
