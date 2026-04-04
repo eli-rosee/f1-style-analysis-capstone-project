@@ -245,14 +245,15 @@ def export_cluster_summary(race, clusterVariables, filename="cluster_summary.csv
 
 
 def main():
-    race_name = 'Canadian_Grand_Prix'
+    race_name = 'Emilia_Romagna_Grand_Prix'
 
     #All columns that can be fetched from the database:
     #'rel_distance', 'time', 'track_coordinate_x', 'track_coordinate_y', 'track_coordinate_z', 'rpm', 'gear', 'throttle', 'brake', 'drs', 'speed', 'acc_x', 'acc_y', 'acc_z'
     
     #change variables to cluster on here
     #remember to set PCA to false if you are only clustering on one variable
-    clusterVariables = ["rpm", "speed", "throttle", "brake", "gear", "acc_x", "acc_y", "acc_z"]
+    #clusterVariables = ["rpm", "speed", "throttle", "brake", "gear", "acc_x", "acc_y", "acc_z"]
+    clusterVariables = ["acc_x", "acc_y", "acc_z"]
 
     #create RaceData object with the defined columns
     race = RaceData(race_name, clusterVariables)
