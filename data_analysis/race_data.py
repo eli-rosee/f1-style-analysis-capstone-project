@@ -179,7 +179,7 @@ class RaceData:
                 
                 for col in self.norm_columns:
                     df[col] = (df[col] - min_dict[col]) / (max_dict[col] - min_dict[col])
-                    np.clip(df[col], 0, 1)
+                    df[col] = np.clip(df[col], 0, 1)
 
     def _average_speed_check(self, iqr_multiplier=1.5):
         print("Checking speed thresholds (lower tail IQR)...")
