@@ -8,6 +8,8 @@
 			height: 100%;
 			margin: 0;
 			font-family: Arial, sans-serif;
+			background: #0d0d0f;
+                	color: #f0f0f0;
 		}
 
 		.container {
@@ -17,13 +19,13 @@
 		}
 	/* ----------------- Panels ----------------- */
 		.panel:nth-child(1) { /*Driver Selection*/
-      			border-bottom: 1px solid #ddd;
+      			border-bottom: 1px solid #2a2a2e;
       			padding: 10px;
       			box-sizing: border-box;
     		}
 
     		.panel:nth-child(2) { /*Stat Blocks*/
-      			border-bottom: 1px solid #ddd;
+      			border-bottom: 1px solid #2a2a2e;
       			padding: 10px;
       			box-sizing: border-box;
     		}
@@ -37,58 +39,101 @@
 	/* ----------------- Driver Header ----------------- */
     		.driver-header h1 {
       			margin: 0 0 5px 0;
+                	font-size: 20px;
+                	font-weight: 700;
+                	letter-spacing: 0.08em;
+                	text-transform: uppercase;
+                	color: #ffffff;
     		}
+
+		.driver-header h1 span {
+                	color: #e10600;
+        	}
 
     		.driver-header p {
       			margin: 0 0 10px 0;
-      			font-weight: bold;
+      			font-size: 10px;
+                	font-weight: 700;
+                	letter-spacing: 0.12em;
+                	text-transform: uppercase;
+                	color: #555560;
     		}
+
+		.driver-header p::before {
+                	content: '';
+                	display: inline-block;
+                	width: 24px;
+                	height: 2px;
+                	background: #e10600;
+                	vertical-align: middle;
+                	margin-right: 8px;
+                	border-radius: 1px;
+        	}
 
     		.teams-container {
       			display: flex;
-      			gap: 12px;
+      			gap: 8px;
       			overflow-x: auto;
       			padding-bottom: 8px;
+			justify-content: center;
     		}
 
     		.team-block {
-      			min-width: 132px;
-      			height: 132px;
-      			border: 2px solid #ccc;
-      			border-radius: 8px;
-      			background: #f9f9f9;
-      			display: flex;
-      			flex-direction: column;
-      			justify-content: space-between;
-      			padding: 6px;
-      			box-sizing: border-box;
-    		}
+                	min-width: 110px;
+                	height: 110px;
+                	border: 1px solid #2a2a2e;
+                	border-radius: 8px;
+                	background: #18181c;
+                	display: flex;
+                	flex-direction: column;
+                	justify-content: space-between;
+                	padding: 6px;
+                	box-sizing: border-box;
+        	}
+
+		.team-block:nth-child(1)  { background: #1a1a3a; border-color: #3b3fad; } /* Red Bull */
+		.team-block:nth-child(2)  { background: #1f0a0a; border-color: #e10600; } /* Ferrari */
+		.team-block:nth-child(3)  { background: #0a1a1a; border-color: #00d2be; } /* Mercedes */
+		.team-block:nth-child(4)  { background: #1a1100; border-color: #ff8000; } /* McLaren */
+		.team-block:nth-child(5)  { background: #0a1a0e; border-color: #006f3c; } /* Aston Martin */
+		.team-block:nth-child(6)  { background: #0a0a1a; border-color: #0090ff; } /* Alpine */
+		.team-block:nth-child(7)  { background: #1a1a1a; border-color: #005aff; } /* Williams */
+		.team-block:nth-child(8)  { background: #1a0f00; border-color: #b6babd; } /* Haas */
+		.team-block:nth-child(9)  { background: #1a0a00; border-color: #6692ff; } /* Racing Bulls */
+		.team-block:nth-child(10) { background: #0f001a; border-color: #52e252; } /* Kick Sauber */
 
     		.team-name {
       			text-align: center;
-      			font-size: 0.8rem;
-      			font-weight: bold;
+      			font-size: 0.7rem;
+      			font-weight: 700;
+			letter-spacing: 0.1em;
+                	text-transform: uppercase;
+                	color: #666672;
       			margin-bottom: 4px;
     		}
 
     		.team-block button {
       			flex: 1;
       			margin: 3px 0;
-      			border: none;
+      			border: 1px solid #333340;
       			border-radius: 4px;
       			cursor: pointer;
-      			font-weight: bold;
-      			font-size: 0.95rem;
-      			background: #e10600;
-      			color: white;
+      			font-weight: 700;
+      			font-size: 0.8rem;
+      			background: #222228;
+                	color: #ccccdd;
     		}
 
     		.team-block button:hover {
-      			background: #b80500;
+      			background: #2e2e36;
+                	border-color: #e10600;
+                	color: #ffffff;
     		}
 
     		.team-block button.selected {
-      			background: #005ce6;
+      			background: #e10600;
+                	border-color: #e10600;
+                	color: #ffffff;
     		}
 	
 	/* ----------------- Middle Panel  ----------------- */
@@ -99,25 +144,33 @@
     		}
 
     		.driver-stats {
-	    		width: 95%;
-	    		max-width: 2000px;
+	    		width: fit-content;
+			max-width: calc(100% - 20px);
 	    		margin: 10px auto;
-	    		border: 2px solid #555;
+	    		border: 1px solid #2a2a2e;
 	    		border-radius: 10px;
-	    		background: #f0f0f5;
+	    		background: #18181c;
 	    		padding: 15px;
 	    		box-sizing: border-box;
-			
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			gap: 10px;
+			overflow: hidden;
     		}
 
     		.driver-stats h2 {
 			flex-basis: 100%;
-      			margin: 0 0 10px 0;
-      			text-align: center;
+                	margin: 0 0 10px 0;
+                	text-align: center;
+                	font-size: 13px;
+                	font-weight: 700;
+                	letter-spacing: 0.1em;
+                	text-transform: uppercase;
+                	color: #ffffff;
+                	border-bottom: 1px solid #e10600;
+                	padding-bottom: 8px;
+                	width: 100%;
     		}
 
 		.charts-row {
@@ -125,21 +178,15 @@
 			gap: 10px;
 			align-items: center;
     			flex-wrap: nowrap;     
-    			overflow-x: auto;      
+    			overflow-x: auto;
+			width: 100%;
+			padding-bottom: 8px;
 		}
 
 		.charts-row canvas {
 			flex-shrink: 0;
-			width: 200px !important;
-			height: 200px !important;
 			display: block;
 		}
-
-		.charts-row canvas.radar {
-			width: 260px !important;
-			height: 260px !important;
-		}
-
 
 	/*---------Map Visualization Panel-------------*/
     		.map-controls {
@@ -149,12 +196,32 @@
   			padding: 5px 0;
     		}
 
+		.map-controls label {
+                	font-size: 10px;
+                	font-weight: 700;
+                	letter-spacing: 0.12em;
+                	text-transform: uppercase;
+                	color: #555560;
+        	}
+
+		.map-controls label::before {
+                	content: '';
+                	display: inline-block;
+                	width: 24px;
+                	height: 2px;
+                	background: #e10600;
+                	vertical-align: middle;
+                	margin-right: 8px;
+                	border-radius: 1px;
+        	}
+
     		.track-dropdown {
   			padding: 8px 12px;
   			border-radius: 5px;
-  			border: 1px solid #ccc;
-  			font-size: 1rem;
-  			background-color: white;
+  			border: 1px solid #2a2a2e;
+  			font-size: 0.9rem;
+  			background-color: #18181c;
+                	color: #ccccdd;
   			cursor: pointer;
   			flex: 1;
   			max-width: 400px;
@@ -162,7 +229,7 @@
 
     		.track-dropdown:focus {
   			outline: none;
-  			border-color: #e10600; /* F1 Red */
+  			border-color: #e10600;
     		}
   	</style>
 </head>
@@ -172,13 +239,13 @@
     		<!-- Top section -->
     		<div class="panel">
       			<div class="driver-header">
-        			<h1>F1 Telemetry Insights Visual Dashboard</h1>
+        			<h1><span>F1</span> Telemetry Insights Visual Dashboard</h1>
         			<p>Driver Selection</p>
 				<div class="teams-container">
 					<div class="team-block">
 						<div class="team-name">Red Bull Racing</div>
 						<button>Verstappen</button>
-							<button>Tsunoda</button>
+						<button>Tsunoda</button>
 					</div>
 					<div class="team-block">
 						<div class="team-name">Ferrari</div>
@@ -234,7 +301,7 @@
 		<!------- Bottom section -------->
 		<div class="panel">
 			<div class="map-controls">
-				<label for="track-select"><strong>Map Visualization:</strong></label>
+				<label for="track-select">Map Visualization:</label>
 				<select id="track-select" class="track-dropdown">
 					<option value="default">Select a track</option>
 					<hr>
@@ -244,8 +311,8 @@
 					<option value="japan">Suzuka, Japan - Suzuka Circuit</option>
 					<option value="bahrain">Sakhir, Bahrain - Bahrain International Circuit</option>
 					<option value="saudi">Jeddah, Saudi Arabia - Jeddah Corniche Circuit</option>
-					<option value="miami">Miami, USA - Miami International Autodrome</option>
-					<option value="imola">Imola, Italy - Autodromo Enzo e Dino Ferrari</option>
+					<option value="usa_miami">Miami, USA - Miami International Autodrome</option>
+					<option value="italy_imola">Imola, Italy - Autodromo Enzo e Dino Ferrari</option>
 					<option value="monaco">Monaco, Monaco - Circuit de Monaco</option>
 					<option value="spain">Barcelona, Spain - Circuit de Barcelona-Catalunya</option>
 					<option value="austria">Spielberg, Austria - Red Bull Ring</option>
@@ -253,23 +320,23 @@
 					<option value="belgium">Spa, Belgium - Circuit de Spa-Francorchamps</option>
 					<option value="hungary">Budapest, Hungary - Hungaroring</option>
 					<option value="netherlands">Zandvoort, Netherlands - Circuit Zandvoort</option>
-					<option value="italy">Monza, Italy - Autodromo Nazionale Monza</option>
+					<option value="italy_monza">Monza, Italy - Autodromo Nazionale Monza</option>
 					<option value="azerbaijan">Baku, Azerbaijan - Baku City Circuit</option>
 					<option value="singapore">Singapore, Singapore - Marina Bay Street Circuit</option>
 					<option value="usa_austin">Austin, USA - Circuit of the Americas</option>
 					<option value="mexico">Mexico City, Mexico - Autódromo Hermanos Rodríguez</option>
 					<option value="brazil">Sao Paulo, Brazil - Interlagos Circuit</option>
-					<option value="vegas">Las Vegas, USA - Las Vegas Strip Circuit</option>
+					<option value="usa_vegas">Las Vegas, USA - Las Vegas Strip Circuit</option>
 					<option value="qatar">Lusail, Qatar - Lusail International Circuit</option>
 					<option value="abudhabi">Abu Dhabi, UAE - Yas Marina Circuit</option>
 				</select>
 			</div>
-			<div id="map-display" style="margin-top: 15px; height: 200px; background: #eee; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666;">
+			<div id="map-display" style="margin-top: 15px; height: 200px; background: #18181c; border-radius: 8px; border: 1px solid #2a2a2e; display: flex; align-items: center; justify-content: center; color: #333340; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;">
 			Select a track to view telemetry map
 			</div>
 		</div>
 	</div>
-	
+
 	<!--Chart.js Import-->
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -279,6 +346,24 @@
 		const driverButtons = document.querySelectorAll('.team-block button');
 	  	const middlePanel = document.getElementById('middle-panel');
 	  	const selectedDrivers = new Set();
+ 		const startRoster = {
+                        "Red Bull Racing": ["Verstappen", "Lawson"],
+                        "Ferrari": ["Leclerc", "Hamilton"],
+                        "Mercedes": ["Russell", "Antonelli"],
+                        "McLaren": ["Norris", "Piastri"],
+                        "Aston Martin": ["Alonso", "Stroll"],
+                        "Alpine": ["Gasly", "Doohan"],
+                        "Williams": ["Sainz", "Albon"],
+                        "Haas F1 Team": ["Ocon", "Bearman"],
+                        "Racing Bulls": ["Tsunoda", "Hadjar"],
+                        "Kick Sauber": ["Bortoleto", "Hülkenberg"]
+                };
+
+		window.addEventListener('resize', () => {
+    			Object.values(charts).forEach(chart => {
+        			chart.resize();
+    			});
+		});
 
 	  	driverButtons.forEach(button => {
 		  	button.addEventListener('click', () => {
@@ -321,13 +406,17 @@
 					];
 					
 					for (let i = 0; i < 6; i++) {
+						const pieWrapper = document.createElement('div');
+						pieWrapper.style.cssText = 'width: 200px; height: 200px; flex-shrink: 0;';
+						chartsRow.appendChild(pieWrapper);
+
 						const pieCanvas = document.createElement('canvas');
 						pieCanvas.id = `pie-${driverName}-${i}`;
-						chartsRow.appendChild(pieCanvas);
+						pieWrapper.appendChild(pieCanvas);
 
 						const ctxPie = pieCanvas.getContext('2d');
 						
-						new Chart(ctxPie, {
+						const pieChart = new Chart(ctxPie, {
 							type: 'pie',
 							data: {
 								labels: ['Cluster A', 'Cluster B', 'Cluster C'],
@@ -345,7 +434,8 @@
 								}]
 							},
 							options: {
-								responsive: false,
+								responsive: true,
+								maintainAspectRatio: false,
 								plugins: {
                                                                 	legend: {
                                                                         	display: false
@@ -353,6 +443,7 @@
 									title: {
 										display: true,
 										text: pieTitles[i],
+										color: '#ccccdd',
 										font: {
 											size: 20
 										}
@@ -361,14 +452,18 @@
                                                         	}
 							}
 						});
+						charts[`${driverName}-pie-${i}`] = pieChart;
 					}
 
 
           				// Create canvas for radar chart
-	  				const radarCanvas = document.createElement('canvas');
-	  				radarCanvas.id = `radar-${driverName}`;
-					radarCanvas.classList.add('radar');
-					chartsRow.appendChild(radarCanvas);
+	  				const radarWrapper = document.createElement('div');
+					radarWrapper.style.cssText = 'width: 260px; height: 260px; flex-shrink: 0;';
+					chartsRow.appendChild(radarWrapper);
+
+					const radarCanvas = document.createElement('canvas');
+					radarCanvas.id = `radar-${driverName}`;
+					radarWrapper.appendChild(radarCanvas);
 	  				
 					const ctxRadar = radarCanvas.getContext('2d');
 
@@ -391,7 +486,8 @@
 							}]
 						},
 						options: {
-							responsive: false,
+							responsive: true,
+							maintainAspectRatio: false,
 							plugins: {
 								legend: {
 									display: false
@@ -401,7 +497,17 @@
 								r: {
 									beginAtZero: true,
 									min: 0,
-									max: 100
+									max: 100,
+									ticks: {
+										color: '#555560',
+										backdropColor: 'transparent'
+									},
+									grid: {
+										color: '#2a2a2e'
+									},
+									pointLabels: {
+										color: '#ccccdd'
+									}
 								}
 							}
 						}
@@ -418,7 +524,37 @@
     		const mapPanel = panels[panels.length - 1];
 
     		trackSelect.addEventListener('change', (e) => {
-    			const selectedValue = e.target.value;
+    			
+			const raceIndex = e.target.selectedIndex;
+			let activeRoster = {...startRoster};
+
+			if (raceIndex >= 3) {
+				activeRoster["Red Bull Racing"] = ["Verstappen", "Tsunoda"];
+				activeRoster["Racing Bulls"] = ["Lawson", "Hadjar"];
+			}
+
+			if (raceIndex >= 7) {
+				activeRoster["Alpine"] = ["Gasly", "Colapinto"]
+			}
+
+			document.querySelectorAll('.team-block').forEach(block => {
+				const teamName = block.querySelector('.team-name').innerText.trim();
+				const drivers = activeRoster[teamName];
+
+				if (drivers) {
+					const buttons = block.querySelectorAll('button');
+					if (buttons.length >= 2){
+						buttons[0].textContent = drivers[0];
+						buttons[1].textContent = drivers[1];
+					}
+				}
+
+			}
+		)});
+
+	
+		trackSelect.addEventListener('change', (e) => {
+			const selectedValue = e.target.value;
 
     			if (selectedValue === 'canada') {
     				mapDisplay.style.height = 'auto';
@@ -435,8 +571,9 @@
     				// Revert to placeholder style if any other track is selected
 				mapDisplay.style.height = '200px';
     				mapDisplay.style.display = 'flex';
-    				mapDisplay.style.background = '#eee';
-    				mapDisplay.innerHTML = `Select a track to view telemetry map`;
+    				mapDisplay.style.background = '#18181c';
+				mapDisplay.style.color = '#333340';
+				mapDisplay.innerHTML = `Select a track to view telemetry map`;
     			}
     		});
 	</script>
