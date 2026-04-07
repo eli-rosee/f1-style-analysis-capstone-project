@@ -142,6 +142,7 @@ class RaceData:
         df = df[~df.index.duplicated(keep='first')]
         df = df.reindex(df.index.union(uniform_index))
         df = df.infer_objects(copy=False)
+        df = df[df.index.notna()]
         df = df.interpolate(method='index')
         df = df.ffill()
         df = df.bfill()
@@ -238,3 +239,4 @@ if __name__ == '__main__':
     race = RaceData('Canadian_Grand_Prix')
 
     pca, X_reduced = race.pca()
+    
