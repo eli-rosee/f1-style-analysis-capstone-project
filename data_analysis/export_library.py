@@ -17,7 +17,7 @@ class ExportLibrary:
               <DRIVER>.json                 (Export 4 - future)
     """
 
-    def __init__(self, race_name: str, output_root: str = "exports"):
+    def __init__(self, race_name: str, output_root: str = "../frontend/clustering_results"):
         self.race_name = race_name
         self.output_root = output_root
 
