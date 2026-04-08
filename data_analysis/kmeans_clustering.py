@@ -15,17 +15,34 @@ USE_PCA = True
 
 def _build_matrix(data_dict, drivers):
     all_laps = []
+    lap_refs = []   # ← NEW: track (driver, lap_index)
+    expected_shape = None
+
     for driver in drivers:
-        for lap in data_dict[driver]:
+        for lap_idx, lap in enumerate(data_dict[driver]):
+
             if isinstance(lap, np.ndarray):
-                all_laps.append(lap.flatten())
+                flat = lap.flatten()
             else:
-                all_laps.append(lap.values.flatten())
-    return np.array(all_laps)
+                flat = lap.values.flatten()
+
+            if flat.size == 0:
+                continue
+
+            if expected_shape is None:
+                expected_shape = flat.shape
+
+            if flat.shape == expected_shape:
+                all_laps.append(flat)
+                lap_refs.append((driver, lap_idx))  # ← track it
+            else:
+                print(f"Skipping lap with inconsistent shape: {flat.shape}")
+
+    return np.vstack(all_laps), lap_refs
 
 def k_means_cluster(data_dict, drivers, cluster_num):
     print("\nClustering data (KMeans)...\n")
-    X = _build_matrix(data_dict, drivers)
+    X, lap_refs = _build_matrix(data_dict, drivers)
 
     km = KMeans(n_clusters=cluster_num, random_state=42)
     labels = km.fit_predict(X)
@@ -33,14 +50,11 @@ def k_means_cluster(data_dict, drivers, cluster_num):
     dbi_score = davies_bouldin_score(X, labels)
     cah_score = calinski_harabasz_score(X, labels)
 
-    return labels, sil_score, dbi_score, cah_score
+    return labels, sil_score, dbi_score, cah_score, lap_refs
 
-def attach_labels(interp_dict, drivers, labels):
-    lap_index = 0
-    for driver in drivers:
-        for lap_df in interp_dict[driver]:
-            lap_df['cluster_label'] = labels[lap_index]
-            lap_index += 1
+def attach_labels(interp_dict, lap_refs, labels):
+    for i, (driver, lap_idx) in enumerate(lap_refs):
+        interp_dict[driver][lap_idx]['cluster_label'] = labels[i]
 
 #calculate percentage of laps a driver falls into each cluster
 def driver_cluster_distribution(interp_dict, drivers):
@@ -48,6 +62,9 @@ def driver_cluster_distribution(interp_dict, drivers):
         cluster_counts = {}
 
         for lap_df in interp_dict[driver]:
+            if 'cluster_label' not in lap_df.columns:
+                continue
+
             label = lap_df['cluster_label'].iloc[0]
             cluster_counts[label] = cluster_counts.get(label, 0) + 1
         
@@ -65,6 +82,8 @@ def cluster_mean_telemetry(interp_dict, drivers, norm_tel_columns):
     cluster_laps = {}
     for driver in drivers:
         for lap_df in interp_dict[driver]:
+            if 'cluster_label' not in lap_df.columns:
+                continue
             label = lap_df['cluster_label'].iloc[0]
             if label not in cluster_laps:
                 cluster_laps[label] = []
@@ -143,11 +162,13 @@ def export_clusters_to_csv(race, clusterVariables, filename="clustering_results.
     all_laps_data = []
 
     for driver in race.drivers:
+        
         prev_lap_increment = 0
         min_dict, max_dict = {}, {}
         
         for lap_index, lap_df in enumerate(race.interp_dict[driver], start=1):
-
+            if 'cluster_label' not in lap_df.columns:
+                continue
             #Recreate the 5-lap chunking logic from the _normalize function
             #Ensures we grab the exact min/max used for this specific lap
             lap_increment = lap_index + (5 - lap_index % 5)
@@ -183,6 +204,7 @@ def export_clusters_to_csv(race, clusterVariables, filename="clustering_results.
 
 #Generates a statistical summary (Min, Max, Avg) for the clustered variable across all drivers and saves it to a CSV.
 def export_cluster_summary(race, clusterVariables, filename="cluster_summary.csv"):
+    
     print(f"Generating clustering results summary for {clusterVariables}...")
     
     all_summaries = []
@@ -192,6 +214,8 @@ def export_cluster_summary(race, clusterVariables, filename="cluster_summary.csv
         
         #use enumerate to get lap_idx (starting at 1) without using .index()
         for lap_idx, lap_df in enumerate(race.interp_dict[driver], start=1):
+            if 'cluster_label' not in lap_df.columns:
+                continue
             temp_df = lap_df.copy()
             
             #find the correct 5-lap chunk for denormalization
@@ -357,9 +381,9 @@ def main():
             data_dict = race.interp_dict
         
         # Create kmeans cluster
-        labels, sil, dbi, cah = k_means_cluster(data_dict, drivers, cluster_num=cluster_num)
+        labels, sil, dbi, cah, lap_refs = k_means_cluster(data_dict, drivers, cluster_num=cluster_num)
         
-        attach_labels(race.interp_dict, drivers, labels)
+        attach_labels(race.interp_dict, lap_refs, labels)
         
         # Calculate percentage of laps a driver falls into each cluster
         driver_cluster_distribution(race.interp_dict, drivers)
@@ -383,7 +407,8 @@ def main():
         
         # Save summary of cluster results to a .csv
         export_cluster_summary(race, clusterVariables, filename=summary_filename)
-    
+        # ── NEW: Export 1 – Track Summary ──
+        race.exporter.export_track_summary()
     print("ANALYSIS COMPLETE")
 
 if __name__ == '__main__':
