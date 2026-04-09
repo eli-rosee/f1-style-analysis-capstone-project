@@ -78,9 +78,13 @@ def driver_cluster_distribution(interp_dict, drivers):
     
     print()
 
-#calculate the mean values of each cluster
+#Calculates and returns the mean values of each cluster
 def cluster_mean_telemetry(interp_dict, drivers, norm_tel_columns):
     cluster_laps = {}
+    
+    #stores the mean values of each cluster in a nested dictionary
+    cluster_mean_data = {}
+    
     for driver in drivers:
         for lap_df in interp_dict[driver]:
             if 'cluster_label' not in lap_df.columns:
@@ -93,10 +97,86 @@ def cluster_mean_telemetry(interp_dict, drivers, norm_tel_columns):
     for cluster_id in sorted(cluster_laps.keys()):
         laps = cluster_laps[cluster_id]
         all_data = pd.concat(laps)
+
+        #Initialize the nested dictionary for this specific cluster
+        cluster_id_str = str(cluster_id)
+        cluster_mean_data[cluster_id_str] = {
+            "lap_count": len(laps),
+            "telemetry_means": {}
+        }
+        
+
         print(f"Cluster {cluster_id} ({len(laps)} laps)")
         for col in norm_tel_columns:
             mean = all_data[col].mean()
+
+            #Store the mean inside the sub-dictionary
+            cluster_mean_data[cluster_id_str]["telemetry_means"][col] = mean
+
             print(f"  {col}: {mean:.3f}")
+    
+    #return the mean data dictionary
+    return cluster_mean_data
+
+#create cluster export (JSON 2) given the number of clusters per lap in a dictionary
+def create_cluster_export(race_name, mean_cluster_data, filename="cluster_overview.json"):
+    #Get the total number of laps
+    total_laps = sum(info['lap_count'] for info in mean_cluster_data.values())
+
+    #Used to store info for each cluster
+    clusters_list = []
+
+    #Compute the weighted avg of each metric
+    average_values = {}
+    for cluster_id, info in mean_cluster_data.items():
+        lap_count = info['lap_count']
+        lap_percentage = (lap_count / total_laps) if total_laps > 0 else 0
+        for metric, mean_value in info['telemetry_means'].items():
+            if metric not in average_values:
+                average_values[metric] = 0
+            average_values[metric] += (lap_percentage * mean_value)
+
+    #round weighted averages of each metric
+    for key in average_values:
+        average_values[key] = round(average_values[key], 3)
+
+    #Iterate through the dictionary items to build each cluster entry for the JSON file
+    for cluster_id, info in mean_cluster_data.items():
+        #get total number of laps for each cluster
+        lap_count = info['lap_count']
+
+        #get percentage of laps that fall within each cluster
+        lap_percentage = round((lap_count / total_laps), 3) if total_laps > 0 else 0
+
+        #calculate deviation from average for each cluster metric
+        deviation_summary = {}
+        for metric, mean_value in info['telemetry_means'].items():
+            deviation_summary[metric] = round((mean_value - average_values[metric]), 3)
+
+        #store values in a cluster_entry dictionary
+        cluster_entry = {
+            "cluster_id": cluster_id,
+            "cluster_name": f"Cluster {cluster_id}",
+            "lap_count": lap_count,
+            "lap_percentage": lap_percentage,
+            "deviation_summary": deviation_summary
+        }
+
+        #add cluster_entry to clusters_list
+        clusters_list.append(cluster_entry)
+
+    #create the final JSON structure
+    export_data = {
+        "race": race_name,
+        "clusters": clusters_list
+    }
+
+    #save to a JSON file
+    with open(filename, 'w') as f:
+        json.dump(export_data, f, indent=2)
+    
+    print(f"Successfully saved to {filename}")
+
 
 def visualize_clusters(interp_dict, reduced_dict, drivers, use_pca=True):
     pc1_vals = []
@@ -153,8 +233,6 @@ def visualize_clusters(interp_dict, reduced_dict, drivers, use_pca=True):
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.savefig('clusters.png')
     plt.show()
-
-    import pandas as pd
 
 #denormalizes the clustering data and saves it to an external csv file
 def export_clusters_to_csv(race, clusterVariables, filename="clustering_results.csv"):
@@ -377,14 +455,18 @@ def main():
         # Calculate percentage of laps a driver falls into each cluster
         driver_cluster_distribution(race.interp_dict, drivers)
 
-        # Calculate the mean values of each cluster
-        cluster_mean_telemetry(race.interp_dict, drivers, race.norm_columns)
+        #Print and retrieve the mean values of each cluster
+        mean_cluster_data = cluster_mean_telemetry(race.interp_dict, drivers, race.norm_columns)
+
+        #create cluster export (JSON 2) given the number of clusters per lap in a dictionary
+        create_cluster_export(race_name, mean_cluster_data)
 
         # Print cluster performance metrics
-        print(f"\nCluster Performance Metrics:")
-        print(f"Silhouette: {sil:.4f}") #Range [-1, 1]. Higher score indicates better clustering
-        print(f"Davies Bouldin: {dbi:.4f}") #Lower score indicates better clustering
-        print(f"Calinski Harabasz: {cah:.4f}") #Higher score indicates better clustering
+        #print(f"\nCluster Performance Metrics:")
+        #print(f"Silhouette: {sil:.4f}") #Range [-1, 1]. Higher score indicates better clustering
+        #print(f"Davies Bouldin: {dbi:.4f}") #Lower score indicates better clustering
+        #print(f"Calinski Harabasz: {cah:.4f}") #Higher score indicates better clustering
+        
 
         output_dir = os.path.join("../frontend/clustering_results", race_name)
         os.makedirs(output_dir, exist_ok=True)
