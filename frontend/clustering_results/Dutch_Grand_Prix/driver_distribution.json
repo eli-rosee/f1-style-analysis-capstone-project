@@ -1,0 +1,682 @@
+[
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "ALB",
+    "usable_laps": 63,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 13,
+        "lap_percentage": 0.206
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 12,
+        "lap_percentage": 0.19
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 16,
+        "lap_percentage": 0.254
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 18,
+        "lap_percentage": 0.286
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 4,
+        "lap_percentage": 0.063
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "ALO",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 6,
+        "lap_percentage": 0.094
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 16,
+        "lap_percentage": 0.25
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 25,
+        "lap_percentage": 0.391
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 11,
+        "lap_percentage": 0.172
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 6,
+        "lap_percentage": 0.094
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "ANT",
+    "usable_laps": 66,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 10,
+        "lap_percentage": 0.152
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 17,
+        "lap_percentage": 0.258
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 12,
+        "lap_percentage": 0.182
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 19,
+        "lap_percentage": 0.288
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 8,
+        "lap_percentage": 0.121
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "BEA",
+    "usable_laps": 65,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 13,
+        "lap_percentage": 0.2
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 14,
+        "lap_percentage": 0.215
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 12,
+        "lap_percentage": 0.185
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 21,
+        "lap_percentage": 0.323
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 5,
+        "lap_percentage": 0.077
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "BOR",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 14,
+        "lap_percentage": 0.206
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 17,
+        "lap_percentage": 0.25
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 12,
+        "lap_percentage": 0.176
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 14,
+        "lap_percentage": 0.206
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 11,
+        "lap_percentage": 0.162
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "COL",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 14,
+        "lap_percentage": 0.206
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 16,
+        "lap_percentage": 0.235
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 11,
+        "lap_percentage": 0.162
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 17,
+        "lap_percentage": 0.25
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 10,
+        "lap_percentage": 0.147
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "GAS",
+    "usable_laps": 67,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 13,
+        "lap_percentage": 0.194
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 11,
+        "lap_percentage": 0.164
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 14,
+        "lap_percentage": 0.209
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 21,
+        "lap_percentage": 0.313
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 8,
+        "lap_percentage": 0.119
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "HAD",
+    "usable_laps": 63,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 14,
+        "lap_percentage": 0.222
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 9,
+        "lap_percentage": 0.143
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 15,
+        "lap_percentage": 0.238
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 22,
+        "lap_percentage": 0.349
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 3,
+        "lap_percentage": 0.048
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "HAM",
+    "usable_laps": 21,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.048
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 7,
+        "lap_percentage": 0.333
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.095
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 11,
+        "lap_percentage": 0.524
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "HUL",
+    "usable_laps": 67,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 19,
+        "lap_percentage": 0.284
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 12,
+        "lap_percentage": 0.179
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 11,
+        "lap_percentage": 0.164
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 17,
+        "lap_percentage": 0.254
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 8,
+        "lap_percentage": 0.119
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "LAW",
+    "usable_laps": 61,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 12,
+        "lap_percentage": 0.197
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 24,
+        "lap_percentage": 0.393
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 7,
+        "lap_percentage": 0.115
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 14,
+        "lap_percentage": 0.23
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 4,
+        "lap_percentage": 0.066
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "LEC",
+    "usable_laps": 51,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.039
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 25,
+        "lap_percentage": 0.49
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 14,
+        "lap_percentage": 0.275
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 5,
+        "lap_percentage": 0.098
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 5,
+        "lap_percentage": 0.098
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "NOR",
+    "usable_laps": 53,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.038
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 27,
+        "lap_percentage": 0.509
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 14,
+        "lap_percentage": 0.264
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 10,
+        "lap_percentage": 0.189
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "OCO",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 12,
+        "lap_percentage": 0.174
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 22,
+        "lap_percentage": 0.319
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 15,
+        "lap_percentage": 0.217
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 9,
+        "lap_percentage": 0.13
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 11,
+        "lap_percentage": 0.159
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "PIA",
+    "usable_laps": 60,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 4,
+        "lap_percentage": 0.067
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 23,
+        "lap_percentage": 0.383
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 24,
+        "lap_percentage": 0.4
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 9,
+        "lap_percentage": 0.15
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "RUS",
+    "usable_laps": 67,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 8,
+        "lap_percentage": 0.119
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 25,
+        "lap_percentage": 0.373
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 21,
+        "lap_percentage": 0.313
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 6,
+        "lap_percentage": 0.09
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 7,
+        "lap_percentage": 0.104
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "SAI",
+    "usable_laps": 66,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 11,
+        "lap_percentage": 0.167
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 21,
+        "lap_percentage": 0.318
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 9,
+        "lap_percentage": 0.136
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 16,
+        "lap_percentage": 0.242
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 9,
+        "lap_percentage": 0.136
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "STR",
+    "usable_laps": 60,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 17,
+        "lap_percentage": 0.283
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 16,
+        "lap_percentage": 0.267
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 15,
+        "lap_percentage": 0.25
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 10,
+        "lap_percentage": 0.167
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.033
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "TSU",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 27,
+        "lap_percentage": 0.397
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 8,
+        "lap_percentage": 0.118
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 7,
+        "lap_percentage": 0.103
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 17,
+        "lap_percentage": 0.25
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 9,
+        "lap_percentage": 0.132
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Dutch_Grand_Prix",
+    "driver": "VER",
+    "usable_laps": 67,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 13,
+        "lap_percentage": 0.194
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 15,
+        "lap_percentage": 0.224
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 18,
+        "lap_percentage": 0.269
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 14,
+        "lap_percentage": 0.209
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 7,
+        "lap_percentage": 0.104
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 1
+  }
+]

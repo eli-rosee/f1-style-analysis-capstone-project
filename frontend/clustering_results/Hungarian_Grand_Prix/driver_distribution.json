@@ -1,0 +1,682 @@
+[
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "ALB",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 19,
+        "lap_percentage": 0.279
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 18,
+        "lap_percentage": 0.265
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 7,
+        "lap_percentage": 0.103
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 22,
+        "lap_percentage": 0.324
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "ALO",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 8,
+        "lap_percentage": 0.118
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 6,
+        "lap_percentage": 0.088
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.059
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 49,
+        "lap_percentage": 0.721
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "ANT",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 19,
+        "lap_percentage": 0.279
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 21,
+        "lap_percentage": 0.309
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 3,
+        "lap_percentage": 0.044
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 24,
+        "lap_percentage": 0.353
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "BEA",
+    "usable_laps": 47,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.043
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 19,
+        "lap_percentage": 0.404
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 6,
+        "lap_percentage": 0.128
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.085
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 16,
+        "lap_percentage": 0.34
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "BOR",
+    "usable_laps": 59,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.017
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 13,
+        "lap_percentage": 0.22
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.017
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 6,
+        "lap_percentage": 0.102
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 38,
+        "lap_percentage": 0.644
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "COL",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.035
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 21,
+        "lap_percentage": 0.368
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.053
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 8,
+        "lap_percentage": 0.14
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 23,
+        "lap_percentage": 0.404
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "GAS",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 10,
+        "lap_percentage": 0.147
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 42,
+        "lap_percentage": 0.618
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.059
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 11,
+        "lap_percentage": 0.162
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "HAD",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 23,
+        "lap_percentage": 0.338
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 30,
+        "lap_percentage": 0.441
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.059
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 10,
+        "lap_percentage": 0.147
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "HAM",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 10,
+        "lap_percentage": 0.147
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 37,
+        "lap_percentage": 0.544
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.059
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 16,
+        "lap_percentage": 0.235
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "HUL",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 22,
+        "lap_percentage": 0.324
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 22,
+        "lap_percentage": 0.324
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 8,
+        "lap_percentage": 0.118
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 14,
+        "lap_percentage": 0.206
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "LAW",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.014
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 23,
+        "lap_percentage": 0.333
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 23,
+        "lap_percentage": 0.333
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.058
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 18,
+        "lap_percentage": 0.261
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "LEC",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 10,
+        "lap_percentage": 0.147
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 11,
+        "lap_percentage": 0.162
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 43,
+        "lap_percentage": 0.632
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "NOR",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 24,
+        "lap_percentage": 0.353
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 11,
+        "lap_percentage": 0.162
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.059
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 28,
+        "lap_percentage": 0.412
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "OCO",
+    "usable_laps": 67,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 13,
+        "lap_percentage": 0.194
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 35,
+        "lap_percentage": 0.522
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.06
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 14,
+        "lap_percentage": 0.209
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "PIA",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 18,
+        "lap_percentage": 0.261
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.043
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 10,
+        "lap_percentage": 0.145
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 36,
+        "lap_percentage": 0.522
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "RUS",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 16,
+        "lap_percentage": 0.235
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.044
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 10,
+        "lap_percentage": 0.147
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 37,
+        "lap_percentage": 0.544
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "SAI",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 18,
+        "lap_percentage": 0.265
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 21,
+        "lap_percentage": 0.309
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 8,
+        "lap_percentage": 0.118
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 19,
+        "lap_percentage": 0.279
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "STR",
+    "usable_laps": 54,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.019
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 17,
+        "lap_percentage": 0.315
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.037
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.074
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 30,
+        "lap_percentage": 0.556
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "TSU",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 21,
+        "lap_percentage": 0.309
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 26,
+        "lap_percentage": 0.382
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 10,
+        "lap_percentage": 0.147
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 9,
+        "lap_percentage": 0.132
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Hungarian_Grand_Prix",
+    "driver": "VER",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 20,
+        "lap_percentage": 0.29
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 24,
+        "lap_percentage": 0.348
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 8,
+        "lap_percentage": 0.116
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 15,
+        "lap_percentage": 0.217
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 1
+  }
+]

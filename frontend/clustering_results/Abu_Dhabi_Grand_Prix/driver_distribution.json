@@ -1,0 +1,682 @@
+[
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "ALB",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 21,
+        "lap_percentage": 0.368
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.035
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 23,
+        "lap_percentage": 0.404
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 11,
+        "lap_percentage": 0.193
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "ALO",
+    "usable_laps": 50,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 13,
+        "lap_percentage": 0.26
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.02
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 18,
+        "lap_percentage": 0.36
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 18,
+        "lap_percentage": 0.36
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "ANT",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 31,
+        "lap_percentage": 0.544
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 13,
+        "lap_percentage": 0.228
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 12,
+        "lap_percentage": 0.211
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "BEA",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 12,
+        "lap_percentage": 0.211
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 12,
+        "lap_percentage": 0.211
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 32,
+        "lap_percentage": 0.561
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "BOR",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 15,
+        "lap_percentage": 0.263
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 17,
+        "lap_percentage": 0.298
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 24,
+        "lap_percentage": 0.421
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "COL",
+    "usable_laps": 56,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 35,
+        "lap_percentage": 0.625
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.036
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 12,
+        "lap_percentage": 0.214
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 7,
+        "lap_percentage": 0.125
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "GAS",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 43,
+        "lap_percentage": 0.782
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.036
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 3,
+        "lap_percentage": 0.055
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 7,
+        "lap_percentage": 0.127
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "HAD",
+    "usable_laps": 56,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.089
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 21,
+        "lap_percentage": 0.375
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 29,
+        "lap_percentage": 0.518
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "HAM",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 10,
+        "lap_percentage": 0.175
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.035
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 19,
+        "lap_percentage": 0.333
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 26,
+        "lap_percentage": 0.456
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "HUL",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 28,
+        "lap_percentage": 0.491
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.035
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 10,
+        "lap_percentage": 0.175
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 17,
+        "lap_percentage": 0.298
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "LAW",
+    "usable_laps": 56,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 21,
+        "lap_percentage": 0.375
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 34,
+        "lap_percentage": 0.607
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "LEC",
+    "usable_laps": 56,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 42,
+        "lap_percentage": 0.75
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.036
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 8,
+        "lap_percentage": 0.143
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 4,
+        "lap_percentage": 0.071
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "NOR",
+    "usable_laps": 53,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 18,
+        "lap_percentage": 0.34
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.038
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 7,
+        "lap_percentage": 0.132
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 26,
+        "lap_percentage": 0.491
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "OCO",
+    "usable_laps": 56,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 10,
+        "lap_percentage": 0.179
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 30,
+        "lap_percentage": 0.536
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 15,
+        "lap_percentage": 0.268
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "PIA",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 45,
+        "lap_percentage": 0.789
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.07
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 7,
+        "lap_percentage": 0.123
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "RUS",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 30,
+        "lap_percentage": 0.526
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 13,
+        "lap_percentage": 0.228
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 13,
+        "lap_percentage": 0.228
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "SAI",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 24,
+        "lap_percentage": 0.421
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 32,
+        "lap_percentage": 0.561
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "STR",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 25,
+        "lap_percentage": 0.439
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 11,
+        "lap_percentage": 0.193
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 20,
+        "lap_percentage": 0.351
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "TSU",
+    "usable_laps": 57,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 2,
+        "lap_percentage": 0.035
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 12,
+        "lap_percentage": 0.211
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 42,
+        "lap_percentage": 0.737
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Abu_Dhabi_Grand_Prix",
+    "driver": "VER",
+    "usable_laps": 52,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 23,
+        "lap_percentage": 0.442
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.019
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 6,
+        "lap_percentage": 0.115
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 22,
+        "lap_percentage": 0.423
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  }
+]

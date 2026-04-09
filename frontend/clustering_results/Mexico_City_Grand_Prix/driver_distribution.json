@@ -1,0 +1,682 @@
+[
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "ALB",
+    "usable_laps": 67,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 16,
+        "lap_percentage": 0.239
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 19,
+        "lap_percentage": 0.284
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 9,
+        "lap_percentage": 0.134
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.03
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 21,
+        "lap_percentage": 0.313
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "ALO",
+    "usable_laps": 33,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 14,
+        "lap_percentage": 0.424
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.152
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.091
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.061
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 9,
+        "lap_percentage": 0.273
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "ANT",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 16,
+        "lap_percentage": 0.232
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 27,
+        "lap_percentage": 0.391
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 5,
+        "lap_percentage": 0.072
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 19,
+        "lap_percentage": 0.275
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "BEA",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 18,
+        "lap_percentage": 0.261
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 16,
+        "lap_percentage": 0.232
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 4,
+        "lap_percentage": 0.058
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 29,
+        "lap_percentage": 0.42
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "BOR",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 16,
+        "lap_percentage": 0.232
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 31,
+        "lap_percentage": 0.449
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 6,
+        "lap_percentage": 0.087
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 14,
+        "lap_percentage": 0.203
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "COL",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 9,
+        "lap_percentage": 0.132
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 26,
+        "lap_percentage": 0.382
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 5,
+        "lap_percentage": 0.074
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 27,
+        "lap_percentage": 0.397
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "GAS",
+    "usable_laps": 65,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 5,
+        "lap_percentage": 0.077
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 27,
+        "lap_percentage": 0.415
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 4,
+        "lap_percentage": 0.062
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 28,
+        "lap_percentage": 0.431
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "HAD",
+    "usable_laps": 67,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 15,
+        "lap_percentage": 0.224
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 16,
+        "lap_percentage": 0.239
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 5,
+        "lap_percentage": 0.075
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 30,
+        "lap_percentage": 0.448
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "HAM",
+    "usable_laps": 58,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 18,
+        "lap_percentage": 0.31
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 19,
+        "lap_percentage": 0.328
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 4,
+        "lap_percentage": 0.069
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.034
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 15,
+        "lap_percentage": 0.259
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "HUL",
+    "usable_laps": 24,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 4,
+        "lap_percentage": 0.167
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 3,
+        "lap_percentage": 0.125
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 5,
+        "lap_percentage": 0.208
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.042
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 11,
+        "lap_percentage": 0.458
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "LAW",
+    "usable_laps": 4,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.5
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.5
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "LEC",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 47,
+        "lap_percentage": 0.691
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.044
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 17,
+        "lap_percentage": 0.25
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "NOR",
+    "usable_laps": 59,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 8,
+        "lap_percentage": 0.136
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 22,
+        "lap_percentage": 0.373
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.017
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.034
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 26,
+        "lap_percentage": 0.441
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "OCO",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 10,
+        "lap_percentage": 0.145
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 11,
+        "lap_percentage": 0.159
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 13,
+        "lap_percentage": 0.188
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.014
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 34,
+        "lap_percentage": 0.493
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "PIA",
+    "usable_laps": 70,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 23,
+        "lap_percentage": 0.329
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 22,
+        "lap_percentage": 0.314
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 11,
+        "lap_percentage": 0.157
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 12,
+        "lap_percentage": 0.171
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "RUS",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 19,
+        "lap_percentage": 0.275
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 24,
+        "lap_percentage": 0.348
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 6,
+        "lap_percentage": 0.087
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 18,
+        "lap_percentage": 0.261
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "SAI",
+    "usable_laps": 65,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 21,
+        "lap_percentage": 0.323
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 1,
+        "lap_percentage": 0.015
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 25,
+        "lap_percentage": 0.385
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 3,
+        "lap_percentage": 0.046
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 15,
+        "lap_percentage": 0.231
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "STR",
+    "usable_laps": 68,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 20,
+        "lap_percentage": 0.294
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 28,
+        "lap_percentage": 0.412
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.044
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.029
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 15,
+        "lap_percentage": 0.221
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "TSU",
+    "usable_laps": 62,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 11,
+        "lap_percentage": 0.177
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 18,
+        "lap_percentage": 0.29
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 10,
+        "lap_percentage": 0.161
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.032
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 21,
+        "lap_percentage": 0.339
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Mexico_City_Grand_Prix",
+    "driver": "VER",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 8,
+        "lap_percentage": 0.145
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 20,
+        "lap_percentage": 0.364
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.055
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 23,
+        "lap_percentage": 0.418
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  }
+]

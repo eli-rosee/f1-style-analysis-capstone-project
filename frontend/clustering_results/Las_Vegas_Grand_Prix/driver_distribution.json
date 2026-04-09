@@ -1,0 +1,682 @@
+[
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "ALB",
+    "usable_laps": 31,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 10,
+        "lap_percentage": 0.323
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 10,
+        "lap_percentage": 0.323
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.032
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.129
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 6,
+        "lap_percentage": 0.194
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "ALO",
+    "usable_laps": 47,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 4,
+        "lap_percentage": 0.085
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 25,
+        "lap_percentage": 0.532
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.021
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.021
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 16,
+        "lap_percentage": 0.34
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "ANT",
+    "usable_laps": 47,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 1,
+        "lap_percentage": 0.021
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 3,
+        "lap_percentage": 0.064
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 38,
+        "lap_percentage": 0.809
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.043
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 3,
+        "lap_percentage": 0.064
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "BEA",
+    "usable_laps": 47,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 22,
+        "lap_percentage": 0.468
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 14,
+        "lap_percentage": 0.298
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.064
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.021
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 7,
+        "lap_percentage": 0.149
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "BOR",
+    "usable_laps": 2,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 1.0
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 3,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "COL",
+    "usable_laps": 44,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 12,
+        "lap_percentage": 0.273
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 8,
+        "lap_percentage": 0.182
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.045
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.023
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 21,
+        "lap_percentage": 0.477
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "GAS",
+    "usable_laps": 45,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 10,
+        "lap_percentage": 0.222
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.111
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.044
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 28,
+        "lap_percentage": 0.622
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "HAD",
+    "usable_laps": 45,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 28,
+        "lap_percentage": 0.622
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.111
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 10,
+        "lap_percentage": 0.222
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "HAM",
+    "usable_laps": 46,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 22,
+        "lap_percentage": 0.478
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 18,
+        "lap_percentage": 0.391
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 5,
+        "lap_percentage": 0.109
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "HUL",
+    "usable_laps": 46,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 15,
+        "lap_percentage": 0.326
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 13,
+        "lap_percentage": 0.283
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 16,
+        "lap_percentage": 0.348
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "LAW",
+    "usable_laps": 45,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 4,
+        "lap_percentage": 0.089
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 35,
+        "lap_percentage": 0.778
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 5,
+        "lap_percentage": 0.111
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "LEC",
+    "usable_laps": 47,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 6,
+        "lap_percentage": 0.128
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.106
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 21,
+        "lap_percentage": 0.447
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.021
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 14,
+        "lap_percentage": 0.298
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "NOR",
+    "usable_laps": 40,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 12,
+        "lap_percentage": 0.3
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 7,
+        "lap_percentage": 0.175
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.025
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 20,
+        "lap_percentage": 0.5
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "OCO",
+    "usable_laps": 46,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 18,
+        "lap_percentage": 0.391
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 9,
+        "lap_percentage": 0.196
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.043
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 16,
+        "lap_percentage": 0.348
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "PIA",
+    "usable_laps": 46,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 21,
+        "lap_percentage": 0.457
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 16,
+        "lap_percentage": 0.348
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 8,
+        "lap_percentage": 0.174
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "RUS",
+    "usable_laps": 41,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 8,
+        "lap_percentage": 0.195
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 23,
+        "lap_percentage": 0.561
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.024
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 9,
+        "lap_percentage": 0.22
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "SAI",
+    "usable_laps": 46,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 24,
+        "lap_percentage": 0.522
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.109
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 15,
+        "lap_percentage": 0.326
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "STR",
+    "usable_laps": 0,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "TSU",
+    "usable_laps": 47,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 11,
+        "lap_percentage": 0.234
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 21,
+        "lap_percentage": 0.447
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.021
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 14,
+        "lap_percentage": 0.298
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Las_Vegas_Grand_Prix",
+    "driver": "VER",
+    "usable_laps": 46,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 19,
+        "lap_percentage": 0.413
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 2,
+        "lap_percentage": 0.043
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.043
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.022
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 22,
+        "lap_percentage": 0.478
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 0
+  }
+]

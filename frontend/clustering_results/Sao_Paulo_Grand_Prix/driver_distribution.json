@@ -1,0 +1,682 @@
+[
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "ALB",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 17,
+        "lap_percentage": 0.266
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 33,
+        "lap_percentage": 0.516
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 5,
+        "lap_percentage": 0.078
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 7,
+        "lap_percentage": 0.109
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "ALO",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 13,
+        "lap_percentage": 0.203
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 30,
+        "lap_percentage": 0.469
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 12,
+        "lap_percentage": 0.188
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 7,
+        "lap_percentage": 0.109
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "ANT",
+    "usable_laps": 59,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 13,
+        "lap_percentage": 0.22
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 35,
+        "lap_percentage": 0.593
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.034
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 7,
+        "lap_percentage": 0.119
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.034
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "BEA",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 30,
+        "lap_percentage": 0.469
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 9,
+        "lap_percentage": 0.141
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 18,
+        "lap_percentage": 0.281
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 5,
+        "lap_percentage": 0.078
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "BOR",
+    "usable_laps": 0,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "COL",
+    "usable_laps": 63,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 44,
+        "lap_percentage": 0.698
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 7,
+        "lap_percentage": 0.111
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 4,
+        "lap_percentage": 0.063
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 7,
+        "lap_percentage": 0.111
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 1,
+        "lap_percentage": 0.016
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "GAS",
+    "usable_laps": 63,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 35,
+        "lap_percentage": 0.556
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 14,
+        "lap_percentage": 0.222
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 10,
+        "lap_percentage": 0.159
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 3,
+        "lap_percentage": 0.048
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 1,
+        "lap_percentage": 0.016
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "HAD",
+    "usable_laps": 65,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 37,
+        "lap_percentage": 0.569
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 13,
+        "lap_percentage": 0.2
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 8,
+        "lap_percentage": 0.123
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 5,
+        "lap_percentage": 0.077
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "HAM",
+    "usable_laps": 31,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 9,
+        "lap_percentage": 0.29
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 1,
+        "lap_percentage": 0.032
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 12,
+        "lap_percentage": 0.387
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 7,
+        "lap_percentage": 0.226
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.065
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "HUL",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 33,
+        "lap_percentage": 0.516
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 10,
+        "lap_percentage": 0.156
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 16,
+        "lap_percentage": 0.25
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.062
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 1,
+        "lap_percentage": 0.016
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "LAW",
+    "usable_laps": 63,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 40,
+        "lap_percentage": 0.635
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 4,
+        "lap_percentage": 0.063
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 16,
+        "lap_percentage": 0.254
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 3,
+        "lap_percentage": 0.048
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "LEC",
+    "usable_laps": 4,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 4,
+        "lap_percentage": 1.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "NOR",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 30,
+        "lap_percentage": 0.469
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 19,
+        "lap_percentage": 0.297
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 9,
+        "lap_percentage": 0.141
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.062
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "OCO",
+    "usable_laps": 66,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 33,
+        "lap_percentage": 0.5
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 21,
+        "lap_percentage": 0.318
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 6,
+        "lap_percentage": 0.091
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 4,
+        "lap_percentage": 0.061
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.03
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "PIA",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 27,
+        "lap_percentage": 0.422
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 24,
+        "lap_percentage": 0.375
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 6,
+        "lap_percentage": 0.094
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 5,
+        "lap_percentage": 0.078
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "RUS",
+    "usable_laps": 63,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 7,
+        "lap_percentage": 0.111
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 44,
+        "lap_percentage": 0.698
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.032
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 9,
+        "lap_percentage": 0.143
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 1,
+        "lap_percentage": 0.016
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "SAI",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 12,
+        "lap_percentage": 0.188
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 40,
+        "lap_percentage": 0.625
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 8,
+        "lap_percentage": 0.125
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "STR",
+    "usable_laps": 64,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 9,
+        "lap_percentage": 0.141
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 52,
+        "lap_percentage": 0.812
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.031
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 1,
+        "lap_percentage": 0.016
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "TSU",
+    "usable_laps": 67,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 35,
+        "lap_percentage": 0.522
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 3,
+        "lap_percentage": 0.045
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 23,
+        "lap_percentage": 0.343
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 3,
+        "lap_percentage": 0.045
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 3,
+        "lap_percentage": 0.045
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Sao_Paulo_Grand_Prix",
+    "driver": "VER",
+    "usable_laps": 69,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 43,
+        "lap_percentage": 0.623
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 3,
+        "lap_percentage": 0.043
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 12,
+        "lap_percentage": 0.174
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 8,
+        "lap_percentage": 0.116
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 3,
+        "lap_percentage": 0.043
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 2
+  }
+]
