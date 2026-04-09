@@ -1,0 +1,682 @@
+[
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "ALB",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 5,
+        "lap_percentage": 0.091
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 8,
+        "lap_percentage": 0.145
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 3,
+        "lap_percentage": 0.055
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 38,
+        "lap_percentage": 0.691
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "ALO",
+    "usable_laps": 3,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 2,
+        "lap_percentage": 0.667
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.333
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 3
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "ANT",
+    "usable_laps": 50,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 8,
+        "lap_percentage": 0.16
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 4,
+        "lap_percentage": 0.08
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 31,
+        "lap_percentage": 0.62
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.02
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 6,
+        "lap_percentage": 0.12
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "BEA",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 6,
+        "lap_percentage": 0.109
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.091
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 9,
+        "lap_percentage": 0.164
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 34,
+        "lap_percentage": 0.618
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "BOR",
+    "usable_laps": 49,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 14,
+        "lap_percentage": 0.286
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.102
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 28,
+        "lap_percentage": 0.571
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.02
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 1,
+        "lap_percentage": 0.02
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "DOO",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 11,
+        "lap_percentage": 0.2
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 25,
+        "lap_percentage": 0.455
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 17,
+        "lap_percentage": 0.309
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "GAS",
+    "usable_laps": 0,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "HAD",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 24,
+        "lap_percentage": 0.436
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 6,
+        "lap_percentage": 0.109
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 21,
+        "lap_percentage": 0.382
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.036
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.036
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "HAM",
+    "usable_laps": 0,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "HUL",
+    "usable_laps": 53,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 9,
+        "lap_percentage": 0.17
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 7,
+        "lap_percentage": 0.132
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 32,
+        "lap_percentage": 0.604
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.019
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 4,
+        "lap_percentage": 0.075
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "LAW",
+    "usable_laps": 45,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 12,
+        "lap_percentage": 0.267
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 6,
+        "lap_percentage": 0.133
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 25,
+        "lap_percentage": 0.556
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 2,
+        "lap_percentage": 0.044
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "LEC",
+    "usable_laps": 0,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "NOR",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 26,
+        "lap_percentage": 0.473
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 2,
+        "lap_percentage": 0.036
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 23,
+        "lap_percentage": 0.418
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 3,
+        "lap_percentage": 0.055
+      }
+    ],
+    "primary_style_cluster": 0,
+    "secondary_style_cluster": 2
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "OCO",
+    "usable_laps": 50,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 12,
+        "lap_percentage": 0.24
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 21,
+        "lap_percentage": 0.42
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 1,
+        "lap_percentage": 0.02
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.02
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 15,
+        "lap_percentage": 0.3
+      }
+    ],
+    "primary_style_cluster": 1,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "PIA",
+    "usable_laps": 51,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 9,
+        "lap_percentage": 0.176
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 5,
+        "lap_percentage": 0.098
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 34,
+        "lap_percentage": 0.667
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.02
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 2,
+        "lap_percentage": 0.039
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "RUS",
+    "usable_laps": 50,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 2,
+        "lap_percentage": 0.04
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 12,
+        "lap_percentage": 0.24
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.02
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 35,
+        "lap_percentage": 0.7
+      }
+    ],
+    "primary_style_cluster": 4,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "SAI",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 6,
+        "lap_percentage": 0.109
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 7,
+        "lap_percentage": 0.127
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 21,
+        "lap_percentage": 0.382
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 20,
+        "lap_percentage": 0.364
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 4
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "STR",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 14,
+        "lap_percentage": 0.255
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 15,
+        "lap_percentage": 0.273
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 18,
+        "lap_percentage": 0.327
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 7,
+        "lap_percentage": 0.127
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 1
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "TSU",
+    "usable_laps": 54,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 19,
+        "lap_percentage": 0.352
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 8,
+        "lap_percentage": 0.148
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 20,
+        "lap_percentage": 0.37
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 3,
+        "lap_percentage": 0.056
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 4,
+        "lap_percentage": 0.074
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  },
+  {
+    "race": "Chinese_Grand_Prix",
+    "driver": "VER",
+    "usable_laps": 55,
+    "cluster_distribution": [
+      {
+        "cluster_id": 0,
+        "lap_count": 18,
+        "lap_percentage": 0.327
+      },
+      {
+        "cluster_id": 1,
+        "lap_count": 6,
+        "lap_percentage": 0.109
+      },
+      {
+        "cluster_id": 2,
+        "lap_count": 30,
+        "lap_percentage": 0.545
+      },
+      {
+        "cluster_id": 3,
+        "lap_count": 1,
+        "lap_percentage": 0.018
+      },
+      {
+        "cluster_id": 4,
+        "lap_count": 0,
+        "lap_percentage": 0.0
+      }
+    ],
+    "primary_style_cluster": 2,
+    "secondary_style_cluster": 0
+  }
+]
