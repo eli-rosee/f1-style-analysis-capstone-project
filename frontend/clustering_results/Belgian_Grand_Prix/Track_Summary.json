@@ -1,0 +1,11 @@
+{
+  "race": "Belgian_Grand_Prix",
+  "total_laps_ingested": 879,
+  "usable_laps": 773,
+  "dropped_laps": 106,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 86,
+    "nan_detection": 0
+  }
+}

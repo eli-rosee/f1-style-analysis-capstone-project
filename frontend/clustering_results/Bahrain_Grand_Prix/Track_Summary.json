@@ -1,0 +1,11 @@
+{
+  "race": "Bahrain_Grand_Prix",
+  "total_laps_ingested": 1128,
+  "usable_laps": 976,
+  "dropped_laps": 152,
+  "drop_reasons": {
+    "first_lap": 19,
+    "iqr_outlier": 64,
+    "nan_detection": 69
+  }
+}

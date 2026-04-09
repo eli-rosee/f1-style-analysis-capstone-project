@@ -1,0 +1,11 @@
+{
+  "race": "Qatar_Grand_Prix",
+  "total_laps_ingested": 1067,
+  "usable_laps": 998,
+  "dropped_laps": 69,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 48,
+    "nan_detection": 1
+  }
+}

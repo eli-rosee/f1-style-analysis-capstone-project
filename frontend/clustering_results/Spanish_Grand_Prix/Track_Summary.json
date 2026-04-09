@@ -1,0 +1,11 @@
+{
+  "race": "Spanish_Grand_Prix",
+  "total_laps_ingested": 1203,
+  "usable_laps": 1148,
+  "dropped_laps": 55,
+  "drop_reasons": {
+    "first_lap": 19,
+    "iqr_outlier": 35,
+    "nan_detection": 1
+  }
+}

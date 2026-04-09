@@ -1,0 +1,11 @@
+{
+  "race": "Miami_Grand_Prix",
+  "total_laps_ingested": 1005,
+  "usable_laps": 901,
+  "dropped_laps": 104,
+  "drop_reasons": {
+    "first_lap": 19,
+    "iqr_outlier": 82,
+    "nan_detection": 3
+  }
+}

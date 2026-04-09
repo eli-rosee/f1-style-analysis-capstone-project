@@ -1,0 +1,11 @@
+{
+  "race": "Las_Vegas_Grand_Prix",
+  "total_laps_ingested": 886,
+  "usable_laps": 804,
+  "dropped_laps": 82,
+  "drop_reasons": {
+    "first_lap": 18,
+    "iqr_outlier": 63,
+    "nan_detection": 1
+  }
+}

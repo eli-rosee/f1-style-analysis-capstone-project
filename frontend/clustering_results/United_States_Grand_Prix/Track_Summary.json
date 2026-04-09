@@ -1,0 +1,11 @@
+{
+  "race": "United_States_Grand_Prix",
+  "total_laps_ingested": 1067,
+  "usable_laps": 994,
+  "dropped_laps": 73,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 52,
+    "nan_detection": 1
+  }
+}

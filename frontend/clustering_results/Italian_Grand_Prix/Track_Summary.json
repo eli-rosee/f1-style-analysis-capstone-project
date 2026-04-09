@@ -1,0 +1,11 @@
+{
+  "race": "Italian_Grand_Prix",
+  "total_laps_ingested": 975,
+  "usable_laps": 928,
+  "dropped_laps": 47,
+  "drop_reasons": {
+    "first_lap": 19,
+    "iqr_outlier": 17,
+    "nan_detection": 11
+  }
+}

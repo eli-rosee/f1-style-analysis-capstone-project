@@ -1,0 +1,11 @@
+{
+  "race": "Canadian_Grand_Prix",
+  "total_laps_ingested": 1349,
+  "usable_laps": 1237,
+  "dropped_laps": 112,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 89,
+    "nan_detection": 3
+  }
+}

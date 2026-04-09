@@ -1,0 +1,11 @@
+{
+  "race": "Monaco_Grand_Prix",
+  "total_laps_ingested": 1425,
+  "usable_laps": 1334,
+  "dropped_laps": 91,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 69,
+    "nan_detection": 2
+  }
+}

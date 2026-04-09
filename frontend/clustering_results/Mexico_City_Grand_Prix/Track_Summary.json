@@ -1,0 +1,11 @@
+{
+  "race": "Mexico_City_Grand_Prix",
+  "total_laps_ingested": 1263,
+  "usable_laps": 1178,
+  "dropped_laps": 85,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 64,
+    "nan_detection": 1
+  }
+}

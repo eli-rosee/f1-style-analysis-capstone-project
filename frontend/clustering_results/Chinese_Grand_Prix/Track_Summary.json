@@ -1,0 +1,11 @@
+{
+  "race": "Chinese_Grand_Prix",
+  "total_laps_ingested": 1065,
+  "usable_laps": 845,
+  "dropped_laps": 220,
+  "drop_reasons": {
+    "first_lap": 17,
+    "iqr_outlier": 35,
+    "nan_detection": 168
+  }
+}

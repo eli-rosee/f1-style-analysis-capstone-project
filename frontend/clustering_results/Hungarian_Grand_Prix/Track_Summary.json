@@ -1,0 +1,11 @@
+{
+  "race": "Hungarian_Grand_Prix",
+  "total_laps_ingested": 1368,
+  "usable_laps": 1307,
+  "dropped_laps": 61,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 41,
+    "nan_detection": 0
+  }
+}

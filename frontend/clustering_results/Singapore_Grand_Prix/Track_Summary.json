@@ -1,0 +1,11 @@
+{
+  "race": "Singapore_Grand_Prix",
+  "total_laps_ingested": 1229,
+  "usable_laps": 1186,
+  "dropped_laps": 43,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 23,
+    "nan_detection": 0
+  }
+}

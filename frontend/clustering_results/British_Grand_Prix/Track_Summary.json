@@ -1,0 +1,11 @@
+{
+  "race": "British_Grand_Prix",
+  "total_laps_ingested": 826,
+  "usable_laps": 680,
+  "dropped_laps": 146,
+  "drop_reasons": {
+    "first_lap": 17,
+    "iqr_outlier": 125,
+    "nan_detection": 4
+  }
+}

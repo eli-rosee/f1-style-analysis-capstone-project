@@ -1,0 +1,11 @@
+{
+  "race": "Abu_Dhabi_Grand_Prix",
+  "total_laps_ingested": 1156,
+  "usable_laps": 1117,
+  "dropped_laps": 39,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 19,
+    "nan_detection": 0
+  }
+}

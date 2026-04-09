@@ -1,0 +1,11 @@
+{
+  "race": "Azerbaijan_Grand_Prix",
+  "total_laps_ingested": 968,
+  "usable_laps": 883,
+  "dropped_laps": 85,
+  "drop_reasons": {
+    "first_lap": 19,
+    "iqr_outlier": 65,
+    "nan_detection": 1
+  }
+}

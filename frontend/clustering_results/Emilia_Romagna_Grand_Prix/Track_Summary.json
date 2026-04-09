@@ -1,0 +1,11 @@
+{
+  "race": "Emilia_Romagna_Grand_Prix",
+  "total_laps_ingested": 1207,
+  "usable_laps": 1087,
+  "dropped_laps": 120,
+  "drop_reasons": {
+    "first_lap": 20,
+    "iqr_outlier": 98,
+    "nan_detection": 2
+  }
+}

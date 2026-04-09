@@ -1,0 +1,11 @@
+{
+  "race": "Austrian_Grand_Prix",
+  "total_laps_ingested": 1127,
+  "usable_laps": 1063,
+  "dropped_laps": 64,
+  "drop_reasons": {
+    "first_lap": 17,
+    "iqr_outlier": 44,
+    "nan_detection": 3
+  }
+}
