@@ -17,7 +17,6 @@ USE_PCA = True
 def _build_matrix(data_dict, drivers):
     all_laps = []
     lap_refs = []   # ← NEW: track (driver, lap_index)
-    expected_shape = None
 
     for driver in drivers:
         for lap_idx, lap in enumerate(data_dict[driver]):
@@ -30,14 +29,9 @@ def _build_matrix(data_dict, drivers):
             if flat.size == 0:
                 continue
 
-            if expected_shape is None:
-                expected_shape = flat.shape
+            all_laps.append(flat)
+            lap_refs.append((driver, lap_idx))  # ← track it
 
-            if flat.shape == expected_shape:
-                all_laps.append(flat)
-                lap_refs.append((driver, lap_idx))  # ← track it
-            else:
-                print(f"Skipping lap with inconsistent shape: {flat.shape}")
 
     return np.vstack(all_laps), lap_refs
 
@@ -203,71 +197,6 @@ def export_clusters_to_csv(race, clusterVariables, filename="clustering_results.
     else:
         print("Error. No data found to export.")
 
-#Generates a statistical summary (Min, Max, Avg) for the clustered variable across all drivers and saves it to a CSV.
-def export_cluster_summary(race, clusterVariables, filename="cluster_summary.csv"):
-    
-    print(f"Generating clustering results summary for {clusterVariables}...")
-    
-    all_summaries = []
-
-    for driver in race.drivers:
-        driver_laps = []
-        
-        #use enumerate to get lap_idx (starting at 1) without using .index()
-        for lap_idx, lap_df in enumerate(race.interp_dict[driver], start=1):
-            if 'cluster_label' not in lap_df.columns:
-                continue
-            temp_df = lap_df.copy()
-            
-            #find the correct 5-lap chunk for denormalization
-            lap_inc = lap_idx + (5 - lap_idx % 5)
-            min_d, max_d = race._get_min_max_driver_lap(driver, lap_inc - 5, lap_inc)
-            
-            #denormalize the variables
-            for var in clusterVariables:
-                temp_df[var] = (temp_df[var] * (max_d[var] - min_d[var])) + min_d[var]
-            
-            driver_laps.append(temp_df)
-        
-        if not driver_laps:
-            continue
-            
-        #combine all laps for this driver into one DataFrame for analysis
-        df_combined = pd.concat(driver_laps)
-        total_points = len(df_combined)
-
-        #calculate stats for every variable in clusterVariables
-        for var in clusterVariables:
-            #group by the cluster labels and aggregate
-            stats = df_combined.groupby('cluster_label')[var].agg(['count', 'min', 'max', 'mean']).reset_index()
-            
-            stats['Percentage_of_Lap'] = (stats['count'] / total_points) * 100
-            stats['race'] = race.race_name
-            stats['driver'] = driver
-            stats['variable'] = var
-            
-            #rename for the final output
-            stats = stats.rename(columns={
-                'cluster_label': 'Cluster',
-                'min': 'Min',
-                'max': 'Max',
-                'mean': 'Avg'
-            })
-            
-            all_summaries.append(stats)
-
-    #finalize and save
-    if all_summaries:
-        final_df = pd.concat(all_summaries, ignore_index=True)
-        #reorder columns
-        cols = ['race', 'driver', 'variable', 'Cluster', 'Percentage_of_Lap', 'Min', 'Max', 'Avg']
-        final_df = final_df[cols]
-        
-        final_df.to_csv(filename, index=False)
-        print(f"Summary saved to: {filename}")
-    else:
-        print("No data available to summarize.")
-
 #export driver distribution json
 def export_driver_distribution_json(all_driver_distributions, filename="Driver_Distribution.json"):
     print(f"Saving driver distributions to {filename}...")
@@ -277,7 +206,6 @@ def export_driver_distribution_json(all_driver_distributions, filename="Driver_D
 
     print(f"Saved driver distributions to {filename}")
 
-
 def main():
 
     # Load race metadata from cache
@@ -285,34 +213,6 @@ def main():
         race_metadata = json.load(f)
 
     available_races = list(race_metadata['races'].keys())
-
-    track_folder_map = {
-        "Australian_Grand_Prix": "australia",
-        "Chinese_Grand_Prix": "china",
-        "Japanese_Grand_Prix": "japan",
-        "Bahrain_Grand_Prix": "bahrain",
-        "Saudi_Arabian_Grand_Prix": "saudi",
-        "Miami_Grand_Prix": "usa_miami",
-        "Emilia_Romagna_Grand_Prix": "italy_imola",
-        "Monaco_Grand_Prix": "monaco",
-        "Spanish_Grand_Prix": "spain",
-        "Canadian_Grand_Prix": "canada",
-        "Austrian_Grand_Prix": "austria",
-        "British_Grand_Prix": "uk",
-        "Belgian_Grand_Prix": "belgium",
-        "Hungarian_Grand_Prix": "hungary",
-        "Dutch_Grand_Prix": "netherlands",
-        "Italian_Grand_Prix": "italy_monza",
-        "Azerbaijan_Grand_Prix": "azerbaijan",
-        "Singapore_Grand_Prix": "singapore",
-        "United_States_Grand_Prix": "usa_austin",
-        "Mexico_City_Grand_Prix": "mexico",
-        "São_Paulo_Grand_Prix": "brazil",
-        "Sao_Paulo_Grand_Prix": "brazil",
-        "Las_Vegas_Grand_Prix": "usa_vegas",
-        "Qatar_Grand_Prix": "qatar",
-        "Abu_Dhabi_Grand_Prix": "abu_dhabi"
-    }
 
     print("\nF1 LAP CLUSTERING ANALYSIS")
 
@@ -480,19 +380,12 @@ def main():
         print(f"Davies Bouldin: {dbi:.4f}") #Lower score indicates better clustering
         print(f"Calinski Harabasz: {cah:.4f}") #Higher score indicates better clustering
 
-        track_folder = track_folder_map.get(race_name, race_name.lower())
-        output_dir = os.path.join("results", track_folder)
+        output_dir = os.path.join("../frontend/clustering_results", race_name)
         os.makedirs(output_dir, exist_ok=True)
 
-        csv_filename = os.path.join(output_dir, "clustering_results.csv")
-        summary_filename = os.path.join(output_dir, "cluster_summary.csv")
         json_filename = os.path.join(output_dir, "driver_distribution.json")
 
-        # Save cluster results to a .csv
-        export_clusters_to_csv(race, clusterVariables, filename=csv_filename)
-
-        # Save summary of cluster results to a .csv
-        export_cluster_summary(race, clusterVariables, filename=summary_filename)
+        # Save summary of cluster results to a .JSON
         export_driver_distribution_json(all_driver_distributions, filename=json_filename)
         # Export 1 – Track Summar
         race.exporter.export_track_summary()

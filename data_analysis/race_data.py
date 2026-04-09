@@ -82,12 +82,6 @@ class RaceData:
 
         self.exporter.record_load(self.driver_laps)
 
-        self._get_min_max()
-        self._reindex()
-        self._normalize()
-        self._average_speed_check()
-        self.pca()
-
         # Gets the GLOBAL min max (depreciated, we now use local min maxes through _get_min_max)
         self._get_min_max()
 
