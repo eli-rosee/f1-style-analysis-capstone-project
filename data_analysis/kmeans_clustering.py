@@ -171,11 +171,22 @@ def create_cluster_export(race_name, mean_cluster_data, filename="cluster_overvi
         "clusters": clusters_list
     }
 
+
+    output_dir = os.path.join("../frontend/clustering_results", race_name)
+    os.makedirs(output_dir, exist_ok=True)
+
+    json_filename = os.path.join(output_dir, filename)
+
+    #Save summary of cluster results to a .JSON
+    export_driver_distribution_json(export_data, filename=json_filename)
+
+    '''
     #save to a JSON file
     with open(filename, 'w') as f:
         json.dump(export_data, f, indent=2)
     
     print(f"Successfully saved to {filename}")
+    '''
 
 
 def visualize_clusters(interp_dict, reduced_dict, drivers, use_pca=True):
