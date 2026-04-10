@@ -1,0 +1,85 @@
+{
+  "race": "Emilia_Romagna_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 253,
+      "lap_percentage": 0.233,
+      "deviation_summary": {
+        "rpm": -0.003,
+        "speed": -0.022,
+        "throttle": -0.005,
+        "brake": 0.009,
+        "gear": -0.013,
+        "acc_x": -0.002,
+        "acc_y": 0.002,
+        "acc_z": 0.03
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 209,
+      "lap_percentage": 0.192,
+      "deviation_summary": {
+        "rpm": 0.047,
+        "speed": 0.076,
+        "throttle": 0.012,
+        "brake": 0.001,
+        "gear": 0.079,
+        "acc_x": -0.005,
+        "acc_y": -0.0,
+        "acc_z": 0.002
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 67,
+      "lap_percentage": 0.062,
+      "deviation_summary": {
+        "rpm": -0.058,
+        "speed": -0.076,
+        "throttle": -0.247,
+        "brake": 0.026,
+        "gear": -0.087,
+        "acc_x": -0.023,
+        "acc_y": -0.001,
+        "acc_z": 0.008
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 250,
+      "lap_percentage": 0.23,
+      "deviation_summary": {
+        "rpm": -0.009,
+        "speed": -0.008,
+        "throttle": 0.021,
+        "brake": -0.007,
+        "gear": -0.016,
+        "acc_x": 0.003,
+        "acc_y": -0.0,
+        "acc_z": -0.052
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 308,
+      "lap_percentage": 0.283,
+      "deviation_summary": {
+        "rpm": -0.011,
+        "speed": -0.009,
+        "throttle": 0.033,
+        "brake": -0.009,
+        "gear": -0.012,
+        "acc_x": 0.008,
+        "acc_y": -0.0,
+        "acc_z": 0.014
+      }
+    }
+  ]
+}

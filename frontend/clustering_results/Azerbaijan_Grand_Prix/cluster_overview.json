@@ -1,0 +1,85 @@
+{
+  "race": "Azerbaijan_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 121,
+      "lap_percentage": 0.137,
+      "deviation_summary": {
+        "rpm": -0.009,
+        "speed": -0.021,
+        "throttle": -0.009,
+        "brake": 0.008,
+        "gear": -0.008,
+        "acc_x": -0.007,
+        "acc_y": -0.002,
+        "acc_z": -0.008
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 254,
+      "lap_percentage": 0.288,
+      "deviation_summary": {
+        "rpm": 0.001,
+        "speed": 0.006,
+        "throttle": 0.006,
+        "brake": -0.005,
+        "gear": 0.001,
+        "acc_x": 0.004,
+        "acc_y": 0.001,
+        "acc_z": -0.025
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 187,
+      "lap_percentage": 0.212,
+      "deviation_summary": {
+        "rpm": 0.002,
+        "speed": 0.002,
+        "throttle": -0.001,
+        "brake": -0.001,
+        "gear": 0.003,
+        "acc_x": 0.002,
+        "acc_y": 0.0,
+        "acc_z": 0.078
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 226,
+      "lap_percentage": 0.256,
+      "deviation_summary": {
+        "rpm": -0.0,
+        "speed": -0.008,
+        "throttle": -0.005,
+        "brake": 0.002,
+        "gear": -0.005,
+        "acc_x": -0.004,
+        "acc_y": -0.0,
+        "acc_z": -0.052
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 95,
+      "lap_percentage": 0.108,
+      "deviation_summary": {
+        "rpm": 0.002,
+        "speed": 0.021,
+        "throttle": 0.008,
+        "brake": -0.003,
+        "gear": 0.009,
+        "acc_x": 0.004,
+        "acc_y": 0.001,
+        "acc_z": 0.048
+      }
+    }
+  ]
+}

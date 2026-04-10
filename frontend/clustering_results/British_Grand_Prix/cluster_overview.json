@@ -1,0 +1,85 @@
+{
+  "race": "British_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 26,
+      "lap_percentage": 0.038,
+      "deviation_summary": {
+        "rpm": -0.07,
+        "speed": -0.132,
+        "throttle": -0.197,
+        "brake": 0.033,
+        "gear": -0.165,
+        "acc_x": -0.028,
+        "acc_y": -0.001,
+        "acc_z": -0.014
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 347,
+      "lap_percentage": 0.51,
+      "deviation_summary": {
+        "rpm": 0.001,
+        "speed": -0.003,
+        "throttle": -0.001,
+        "brake": 0.004,
+        "gear": -0.006,
+        "acc_x": 0.001,
+        "acc_y": -0.004,
+        "acc_z": 0.001
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 34,
+      "lap_percentage": 0.05,
+      "deviation_summary": {
+        "rpm": 0.025,
+        "speed": 0.055,
+        "throttle": -0.01,
+        "brake": 0.021,
+        "gear": 0.033,
+        "acc_x": -0.015,
+        "acc_y": 0.002,
+        "acc_z": 0.017
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 209,
+      "lap_percentage": 0.307,
+      "deviation_summary": {
+        "rpm": 0.018,
+        "speed": 0.038,
+        "throttle": 0.076,
+        "brake": -0.031,
+        "gear": 0.052,
+        "acc_x": 0.012,
+        "acc_y": 0.008,
+        "acc_z": -0.01
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 64,
+      "lap_percentage": 0.094,
+      "deviation_summary": {
+        "rpm": -0.049,
+        "speed": -0.083,
+        "throttle": -0.156,
+        "brake": 0.051,
+        "gear": -0.085,
+        "acc_x": -0.025,
+        "acc_y": -0.006,
+        "acc_z": 0.027
+      }
+    }
+  ]
+}

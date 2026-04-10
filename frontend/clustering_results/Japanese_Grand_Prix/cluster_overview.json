@@ -1,0 +1,85 @@
+{
+  "race": "Japanese_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 148,
+      "lap_percentage": 0.149,
+      "deviation_summary": {
+        "rpm": -0.015,
+        "speed": -0.033,
+        "throttle": -0.011,
+        "brake": 0.03,
+        "gear": 0.019,
+        "acc_x": -0.005,
+        "acc_y": -0.006,
+        "acc_z": -0.006
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 233,
+      "lap_percentage": 0.234,
+      "deviation_summary": {
+        "rpm": 0.005,
+        "speed": 0.015,
+        "throttle": 0.01,
+        "brake": -0.012,
+        "gear": 0.008,
+        "acc_x": 0.004,
+        "acc_y": 0.005,
+        "acc_z": -0.002
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 139,
+      "lap_percentage": 0.14,
+      "deviation_summary": {
+        "rpm": -0.008,
+        "speed": 0.008,
+        "throttle": 0.022,
+        "brake": 0.018,
+        "gear": 0.008,
+        "acc_x": 0.003,
+        "acc_y": -0.0,
+        "acc_z": -0.001
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 167,
+      "lap_percentage": 0.168,
+      "deviation_summary": {
+        "rpm": 0.001,
+        "speed": -0.016,
+        "throttle": -0.02,
+        "brake": -0.002,
+        "gear": -0.038,
+        "acc_x": -0.007,
+        "acc_y": -0.002,
+        "acc_z": 0.002
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 307,
+      "lap_percentage": 0.309,
+      "deviation_summary": {
+        "rpm": 0.005,
+        "speed": 0.01,
+        "throttle": -0.001,
+        "brake": -0.014,
+        "gear": 0.003,
+        "acc_x": 0.0,
+        "acc_y": 0.002,
+        "acc_z": 0.003
+      }
+    }
+  ]
+}

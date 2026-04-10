@@ -1,0 +1,85 @@
+{
+  "race": "Dutch_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 225,
+      "lap_percentage": 0.182,
+      "deviation_summary": {
+        "rpm": 0.024,
+        "speed": 0.036,
+        "throttle": 0.014,
+        "brake": 0.004,
+        "gear": 0.077,
+        "acc_x": 0.0,
+        "acc_y": 0.001,
+        "acc_z": 0.01
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 337,
+      "lap_percentage": 0.273,
+      "deviation_summary": {
+        "rpm": -0.015,
+        "speed": -0.019,
+        "throttle": 0.02,
+        "brake": -0.003,
+        "gear": -0.041,
+        "acc_x": 0.001,
+        "acc_y": -0.004,
+        "acc_z": -0.009
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 274,
+      "lap_percentage": 0.222,
+      "deviation_summary": {
+        "rpm": 0.044,
+        "speed": 0.067,
+        "throttle": 0.021,
+        "brake": -0.007,
+        "gear": 0.077,
+        "acc_x": -0.004,
+        "acc_y": -0.003,
+        "acc_z": -0.001
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 281,
+      "lap_percentage": 0.228,
+      "deviation_summary": {
+        "rpm": -0.019,
+        "speed": -0.03,
+        "throttle": 0.015,
+        "brake": 0.003,
+        "gear": -0.045,
+        "acc_x": 0.003,
+        "acc_y": -0.004,
+        "acc_z": 0.011
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 117,
+      "lap_percentage": 0.095,
+      "deviation_summary": {
+        "rpm": -0.056,
+        "speed": -0.098,
+        "throttle": -0.168,
+        "brake": 0.017,
+        "gear": -0.099,
+        "acc_x": -0.004,
+        "acc_y": 0.024,
+        "acc_z": -0.015
+      }
+    }
+  ]
+}

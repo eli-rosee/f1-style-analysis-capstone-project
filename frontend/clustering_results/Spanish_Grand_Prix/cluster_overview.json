@@ -1,0 +1,85 @@
+{
+  "race": "Spanish_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 423,
+      "lap_percentage": 0.368,
+      "deviation_summary": {
+        "rpm": -0.013,
+        "speed": -0.023,
+        "throttle": 0.025,
+        "brake": -0.007,
+        "gear": -0.02,
+        "acc_x": 0.008,
+        "acc_y": -0.003,
+        "acc_z": 0.001
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 329,
+      "lap_percentage": 0.287,
+      "deviation_summary": {
+        "rpm": -0.02,
+        "speed": -0.037,
+        "throttle": 0.003,
+        "brake": 0.0,
+        "gear": -0.034,
+        "acc_x": 0.002,
+        "acc_y": -0.002,
+        "acc_z": -0.004
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 270,
+      "lap_percentage": 0.235,
+      "deviation_summary": {
+        "rpm": 0.046,
+        "speed": 0.078,
+        "throttle": 0.006,
+        "brake": 0.0,
+        "gear": 0.086,
+        "acc_x": -0.006,
+        "acc_y": -0.005,
+        "acc_z": -0.005
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 55,
+      "lap_percentage": 0.048,
+      "deviation_summary": {
+        "rpm": 0.032,
+        "speed": 0.061,
+        "throttle": -0.067,
+        "brake": 0.032,
+        "gear": 0.046,
+        "acc_x": -0.028,
+        "acc_y": 0.011,
+        "acc_z": 0.013
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 71,
+      "lap_percentage": 0.062,
+      "deviation_summary": {
+        "rpm": -0.024,
+        "speed": -0.041,
+        "throttle": -0.14,
+        "brake": 0.013,
+        "gear": -0.088,
+        "acc_x": -0.015,
+        "acc_y": 0.029,
+        "acc_z": 0.017
+      }
+    }
+  ]
+}

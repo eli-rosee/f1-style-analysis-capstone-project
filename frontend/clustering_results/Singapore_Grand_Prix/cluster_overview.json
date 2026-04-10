@@ -1,0 +1,85 @@
+{
+  "race": "Singapore_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 204,
+      "lap_percentage": 0.172,
+      "deviation_summary": {
+        "rpm": -0.003,
+        "speed": -0.013,
+        "throttle": -0.015,
+        "brake": 0.009,
+        "gear": -0.014,
+        "acc_x": -0.006,
+        "acc_y": -0.001,
+        "acc_z": 0.003
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 141,
+      "lap_percentage": 0.119,
+      "deviation_summary": {
+        "rpm": 0.002,
+        "speed": 0.008,
+        "throttle": 0.005,
+        "brake": 0.0,
+        "gear": 0.004,
+        "acc_x": 0.002,
+        "acc_y": -0.004,
+        "acc_z": -0.008
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 336,
+      "lap_percentage": 0.283,
+      "deviation_summary": {
+        "rpm": 0.002,
+        "speed": 0.005,
+        "throttle": 0.007,
+        "brake": -0.006,
+        "gear": 0.006,
+        "acc_x": 0.002,
+        "acc_y": -0.001,
+        "acc_z": 0.019
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 308,
+      "lap_percentage": 0.26,
+      "deviation_summary": {
+        "rpm": -0.0,
+        "speed": -0.002,
+        "throttle": -0.0,
+        "brake": -0.001,
+        "gear": 0.002,
+        "acc_x": -0.0,
+        "acc_y": 0.001,
+        "acc_z": -0.117
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 197,
+      "lap_percentage": 0.166,
+      "deviation_summary": {
+        "rpm": 0.0,
+        "speed": -0.002,
+        "throttle": -0.001,
+        "brake": -0.0,
+        "gear": -0.001,
+        "acc_x": 0.002,
+        "acc_y": 0.001,
+        "acc_z": 0.153
+      }
+    }
+  ]
+}

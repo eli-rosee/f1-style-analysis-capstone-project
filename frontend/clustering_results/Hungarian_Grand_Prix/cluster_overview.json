@@ -1,0 +1,85 @@
+{
+  "race": "Hungarian_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 30,
+      "lap_percentage": 0.023,
+      "deviation_summary": {
+        "rpm": 0.05,
+        "speed": 0.098,
+        "throttle": -0.019,
+        "brake": 0.015,
+        "gear": 0.096,
+        "acc_x": -0.013,
+        "acc_y": 0.006,
+        "acc_z": 0.008
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 344,
+      "lap_percentage": 0.263,
+      "deviation_summary": {
+        "rpm": -0.009,
+        "speed": -0.012,
+        "throttle": -0.004,
+        "brake": -0.001,
+        "gear": -0.006,
+        "acc_x": -0.002,
+        "acc_y": 0.0,
+        "acc_z": 0.001
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 336,
+      "lap_percentage": 0.257,
+      "deviation_summary": {
+        "rpm": -0.016,
+        "speed": -0.033,
+        "throttle": -0.007,
+        "brake": 0.012,
+        "gear": -0.057,
+        "acc_x": 0.0,
+        "acc_y": 0.0,
+        "acc_z": -0.004
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 125,
+      "lap_percentage": 0.096,
+      "deviation_summary": {
+        "rpm": 0.058,
+        "speed": 0.107,
+        "throttle": -0.002,
+        "brake": -0.0,
+        "gear": 0.106,
+        "acc_x": -0.001,
+        "acc_y": -0.0,
+        "acc_z": 0.014
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 472,
+      "lap_percentage": 0.361,
+      "deviation_summary": {
+        "rpm": -0.002,
+        "speed": -0.002,
+        "throttle": 0.01,
+        "brake": -0.008,
+        "gear": 0.01,
+        "acc_x": 0.002,
+        "acc_y": -0.002,
+        "acc_z": -0.001
+      }
+    }
+  ]
+}

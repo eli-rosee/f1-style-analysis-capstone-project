@@ -1,0 +1,85 @@
+{
+  "race": "Monaco_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 350,
+      "lap_percentage": 0.262,
+      "deviation_summary": {
+        "rpm": -0.014,
+        "speed": -0.017,
+        "throttle": -0.038,
+        "brake": 0.007,
+        "gear": -0.009,
+        "acc_x": -0.011,
+        "acc_y": 0.002,
+        "acc_z": 0.016
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 340,
+      "lap_percentage": 0.255,
+      "deviation_summary": {
+        "rpm": 0.009,
+        "speed": 0.011,
+        "throttle": 0.021,
+        "brake": -0.004,
+        "gear": 0.009,
+        "acc_x": 0.006,
+        "acc_y": -0.002,
+        "acc_z": -0.006
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 396,
+      "lap_percentage": 0.297,
+      "deviation_summary": {
+        "rpm": 0.012,
+        "speed": 0.013,
+        "throttle": 0.03,
+        "brake": -0.005,
+        "gear": 0.009,
+        "acc_x": 0.011,
+        "acc_y": -0.002,
+        "acc_z": -0.01
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 216,
+      "lap_percentage": 0.162,
+      "deviation_summary": {
+        "rpm": -0.008,
+        "speed": -0.014,
+        "throttle": -0.024,
+        "brake": 0.004,
+        "gear": -0.004,
+        "acc_x": -0.01,
+        "acc_y": 0.005,
+        "acc_z": 0.003
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 32,
+      "lap_percentage": 0.024,
+      "deviation_summary": {
+        "rpm": -0.023,
+        "speed": 0.016,
+        "throttle": -0.009,
+        "brake": 0.001,
+        "gear": -0.047,
+        "acc_x": -0.01,
+        "acc_y": 0.012,
+        "acc_z": 0.0
+      }
+    }
+  ]
+}

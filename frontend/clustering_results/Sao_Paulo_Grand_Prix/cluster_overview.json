@@ -1,0 +1,85 @@
+{
+  "race": "Sao_Paulo_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 467,
+      "lap_percentage": 0.415,
+      "deviation_summary": {
+        "rpm": -0.005,
+        "speed": -0.01,
+        "throttle": 0.005,
+        "brake": -0.003,
+        "gear": -0.021,
+        "acc_x": 0.0,
+        "acc_y": 0.002,
+        "acc_z": 0.007
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 310,
+      "lap_percentage": 0.276,
+      "deviation_summary": {
+        "rpm": -0.002,
+        "speed": -0.001,
+        "throttle": 0.011,
+        "brake": -0.005,
+        "gear": 0.005,
+        "acc_x": 0.008,
+        "acc_y": 0.003,
+        "acc_z": -0.004
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 219,
+      "lap_percentage": 0.195,
+      "deviation_summary": {
+        "rpm": -0.004,
+        "speed": -0.008,
+        "throttle": -0.019,
+        "brake": 0.007,
+        "gear": 0.007,
+        "acc_x": -0.007,
+        "acc_y": -0.004,
+        "acc_z": -0.01
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 98,
+      "lap_percentage": 0.087,
+      "deviation_summary": {
+        "rpm": 0.036,
+        "speed": 0.066,
+        "throttle": -0.009,
+        "brake": 0.012,
+        "gear": 0.076,
+        "acc_x": -0.008,
+        "acc_y": -0.003,
+        "acc_z": -0.002
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 31,
+      "lap_percentage": 0.028,
+      "deviation_summary": {
+        "rpm": -0.01,
+        "speed": -0.009,
+        "throttle": -0.025,
+        "brake": -0.007,
+        "gear": -0.026,
+        "acc_x": 0.009,
+        "acc_y": -0.008,
+        "acc_z": 0.005
+      }
+    }
+  ]
+}

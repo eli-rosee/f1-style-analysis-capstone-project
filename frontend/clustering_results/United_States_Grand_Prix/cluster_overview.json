@@ -1,0 +1,85 @@
+{
+  "race": "United_States_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 402,
+      "lap_percentage": 0.404,
+      "deviation_summary": {
+        "rpm": 0.0,
+        "speed": -0.004,
+        "throttle": 0.008,
+        "brake": -0.008,
+        "gear": -0.011,
+        "acc_x": 0.003,
+        "acc_y": 0.001,
+        "acc_z": -0.003
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 265,
+      "lap_percentage": 0.267,
+      "deviation_summary": {
+        "rpm": -0.004,
+        "speed": -0.006,
+        "throttle": 0.005,
+        "brake": -0.004,
+        "gear": -0.014,
+        "acc_x": 0.0,
+        "acc_y": 0.0,
+        "acc_z": 0.007
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 39,
+      "lap_percentage": 0.039,
+      "deviation_summary": {
+        "rpm": 0.012,
+        "speed": 0.039,
+        "throttle": -0.011,
+        "brake": 0.005,
+        "gear": 0.053,
+        "acc_x": -0.005,
+        "acc_y": -0.005,
+        "acc_z": 0.001
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 90,
+      "lap_percentage": 0.091,
+      "deviation_summary": {
+        "rpm": 0.006,
+        "speed": -0.003,
+        "throttle": -0.002,
+        "brake": 0.049,
+        "gear": -0.029,
+        "acc_x": 0.0,
+        "acc_y": 0.001,
+        "acc_z": -0.001
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 198,
+      "lap_percentage": 0.199,
+      "deviation_summary": {
+        "rpm": 0.001,
+        "speed": 0.011,
+        "throttle": -0.021,
+        "brake": 0.002,
+        "gear": 0.044,
+        "acc_x": -0.007,
+        "acc_y": -0.002,
+        "acc_z": -0.001
+      }
+    }
+  ]
+}

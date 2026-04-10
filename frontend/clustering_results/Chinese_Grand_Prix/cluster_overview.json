@@ -1,0 +1,85 @@
+{
+  "race": "Chinese_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 195,
+      "lap_percentage": 0.231,
+      "deviation_summary": {
+        "rpm": 0.002,
+        "speed": -0.005,
+        "throttle": -0.009,
+        "brake": 0.003,
+        "gear": -0.002,
+        "acc_x": -0.005,
+        "acc_y": -0.001,
+        "acc_z": -0.011
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 142,
+      "lap_percentage": 0.168,
+      "deviation_summary": {
+        "rpm": 0.003,
+        "speed": 0.007,
+        "throttle": 0.017,
+        "brake": 0.0,
+        "gear": 0.0,
+        "acc_x": 0.006,
+        "acc_y": -0.003,
+        "acc_z": -0.002
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 299,
+      "lap_percentage": 0.354,
+      "deviation_summary": {
+        "rpm": -0.003,
+        "speed": 0.0,
+        "throttle": -0.007,
+        "brake": -0.006,
+        "gear": -0.009,
+        "acc_x": -0.003,
+        "acc_y": 0.002,
+        "acc_z": 0.004
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 21,
+      "lap_percentage": 0.025,
+      "deviation_summary": {
+        "rpm": -0.002,
+        "speed": 0.029,
+        "throttle": -0.035,
+        "brake": 0.019,
+        "gear": 0.008,
+        "acc_x": -0.024,
+        "acc_y": 0.003,
+        "acc_z": 0.017
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 188,
+      "lap_percentage": 0.222,
+      "deviation_summary": {
+        "rpm": 0.003,
+        "speed": -0.001,
+        "throttle": 0.011,
+        "brake": 0.006,
+        "gear": 0.016,
+        "acc_x": 0.008,
+        "acc_y": -0.001,
+        "acc_z": 0.006
+      }
+    }
+  ]
+}

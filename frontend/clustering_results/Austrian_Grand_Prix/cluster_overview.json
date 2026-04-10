@@ -1,0 +1,85 @@
+{
+  "race": "Austrian_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 394,
+      "lap_percentage": 0.371,
+      "deviation_summary": {
+        "rpm": -0.0,
+        "speed": 0.011,
+        "throttle": 0.016,
+        "brake": -0.003,
+        "gear": 0.011,
+        "acc_x": 0.002,
+        "acc_y": -0.001,
+        "acc_z": -0.002
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 442,
+      "lap_percentage": 0.416,
+      "deviation_summary": {
+        "rpm": -0.003,
+        "speed": -0.006,
+        "throttle": -0.005,
+        "brake": -0.001,
+        "gear": -0.006,
+        "acc_x": -0.001,
+        "acc_y": -0.001,
+        "acc_z": 0.001
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 32,
+      "lap_percentage": 0.03,
+      "deviation_summary": {
+        "rpm": 0.025,
+        "speed": 0.031,
+        "throttle": -0.032,
+        "brake": 0.022,
+        "gear": 0.012,
+        "acc_x": -0.016,
+        "acc_y": 0.007,
+        "acc_z": 0.012
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 168,
+      "lap_percentage": 0.158,
+      "deviation_summary": {
+        "rpm": 0.003,
+        "speed": -0.015,
+        "throttle": -0.014,
+        "brake": 0.007,
+        "gear": -0.006,
+        "acc_x": 0.001,
+        "acc_y": 0.003,
+        "acc_z": -0.004
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 27,
+      "lap_percentage": 0.025,
+      "deviation_summary": {
+        "rpm": -0.0,
+        "speed": -0.009,
+        "throttle": -0.019,
+        "brake": -0.002,
+        "gear": -0.048,
+        "acc_x": 0.01,
+        "acc_y": -0.001,
+        "acc_z": 0.011
+      }
+    }
+  ]
+}

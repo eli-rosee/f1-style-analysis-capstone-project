@@ -1,0 +1,85 @@
+{
+  "race": "Miami_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 160,
+      "lap_percentage": 0.178,
+      "deviation_summary": {
+        "rpm": 0.0,
+        "speed": -0.009,
+        "throttle": 0.006,
+        "brake": 0.006,
+        "gear": -0.006,
+        "acc_x": 0.002,
+        "acc_y": 0.002,
+        "acc_z": 0.16
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 219,
+      "lap_percentage": 0.243,
+      "deviation_summary": {
+        "rpm": -0.001,
+        "speed": 0.009,
+        "throttle": 0.008,
+        "brake": -0.012,
+        "gear": 0.004,
+        "acc_x": 0.002,
+        "acc_y": 0.002,
+        "acc_z": 0.015
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 22,
+      "lap_percentage": 0.024,
+      "deviation_summary": {
+        "rpm": -0.014,
+        "speed": 0.002,
+        "throttle": -0.063,
+        "brake": 0.027,
+        "gear": -0.013,
+        "acc_x": -0.014,
+        "acc_y": 0.007,
+        "acc_z": -0.02
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 256,
+      "lap_percentage": 0.284,
+      "deviation_summary": {
+        "rpm": 0.002,
+        "speed": -0.002,
+        "throttle": -0.009,
+        "brake": 0.002,
+        "gear": -0.002,
+        "acc_x": -0.004,
+        "acc_y": -0.001,
+        "acc_z": -0.026
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 244,
+      "lap_percentage": 0.271,
+      "deviation_summary": {
+        "rpm": -0.0,
+        "speed": -0.002,
+        "throttle": 0.003,
+        "brake": 0.0,
+        "gear": 0.004,
+        "acc_x": 0.001,
+        "acc_y": -0.004,
+        "acc_z": -0.091
+      }
+    }
+  ]
+}

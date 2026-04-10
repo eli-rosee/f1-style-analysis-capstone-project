@@ -1,0 +1,85 @@
+{
+  "race": "Italian_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 250,
+      "lap_percentage": 0.269,
+      "deviation_summary": {
+        "rpm": 0.018,
+        "speed": 0.017,
+        "throttle": 0.014,
+        "brake": -0.008,
+        "gear": 0.008,
+        "acc_x": 0.004,
+        "acc_y": 0.006,
+        "acc_z": -0.049
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 317,
+      "lap_percentage": 0.342,
+      "deviation_summary": {
+        "rpm": 0.003,
+        "speed": 0.004,
+        "throttle": 0.008,
+        "brake": -0.006,
+        "gear": 0.002,
+        "acc_x": 0.003,
+        "acc_y": 0.003,
+        "acc_z": 0.061
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 17,
+      "lap_percentage": 0.018,
+      "deviation_summary": {
+        "rpm": 0.0,
+        "speed": -0.017,
+        "throttle": -0.018,
+        "brake": 0.006,
+        "gear": -0.055,
+        "acc_x": 0.011,
+        "acc_y": 0.013,
+        "acc_z": -0.023
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 142,
+      "lap_percentage": 0.153,
+      "deviation_summary": {
+        "rpm": -0.017,
+        "speed": -0.017,
+        "throttle": -0.023,
+        "brake": 0.012,
+        "gear": -0.002,
+        "acc_x": -0.01,
+        "acc_y": -0.009,
+        "acc_z": 0.033
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 202,
+      "lap_percentage": 0.218,
+      "deviation_summary": {
+        "rpm": -0.013,
+        "speed": -0.015,
+        "throttle": -0.013,
+        "brake": 0.01,
+        "gear": -0.009,
+        "acc_x": -0.002,
+        "acc_y": -0.005,
+        "acc_z": -0.057
+      }
+    }
+  ]
+}

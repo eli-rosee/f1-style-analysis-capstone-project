@@ -1,0 +1,85 @@
+{
+  "race": "Saudi_Arabian_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 169,
+      "lap_percentage": 0.205,
+      "deviation_summary": {
+        "rpm": -0.001,
+        "speed": 0.014,
+        "throttle": 0.001,
+        "brake": -0.005,
+        "gear": 0.017,
+        "acc_x": -0.001,
+        "acc_y": -0.003,
+        "acc_z": 0.056
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 161,
+      "lap_percentage": 0.196,
+      "deviation_summary": {
+        "rpm": 0.002,
+        "speed": 0.015,
+        "throttle": 0.014,
+        "brake": -0.003,
+        "gear": -0.0,
+        "acc_x": 0.0,
+        "acc_y": -0.002,
+        "acc_z": -0.009
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 195,
+      "lap_percentage": 0.237,
+      "deviation_summary": {
+        "rpm": 0.001,
+        "speed": 0.002,
+        "throttle": 0.007,
+        "brake": -0.005,
+        "gear": 0.002,
+        "acc_x": 0.003,
+        "acc_y": 0.0,
+        "acc_z": -0.05
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 125,
+      "lap_percentage": 0.152,
+      "deviation_summary": {
+        "rpm": -0.008,
+        "speed": -0.029,
+        "throttle": -0.017,
+        "brake": 0.017,
+        "gear": -0.023,
+        "acc_x": 0.0,
+        "acc_y": 0.004,
+        "acc_z": 0.013
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 173,
+      "lap_percentage": 0.21,
+      "deviation_summary": {
+        "rpm": 0.004,
+        "speed": -0.009,
+        "throttle": -0.012,
+        "brake": 0.001,
+        "gear": -0.002,
+        "acc_x": -0.004,
+        "acc_y": -0.001,
+        "acc_z": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "race": "Mexico_City_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 253,
+      "lap_percentage": 0.215,
+      "deviation_summary": {
+        "rpm": -0.012,
+        "speed": -0.019,
+        "throttle": -0.019,
+        "brake": 0.009,
+        "gear": -0.003,
+        "acc_x": -0.005,
+        "acc_y": 0.005,
+        "acc_z": 0.005
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 382,
+      "lap_percentage": 0.324,
+      "deviation_summary": {
+        "rpm": 0.006,
+        "speed": 0.003,
+        "throttle": 0.006,
+        "brake": -0.004,
+        "gear": -0.003,
+        "acc_x": 0.002,
+        "acc_y": -0.001,
+        "acc_z": -0.001
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 125,
+      "lap_percentage": 0.106,
+      "deviation_summary": {
+        "rpm": -0.013,
+        "speed": -0.009,
+        "throttle": -0.007,
+        "brake": 0.005,
+        "gear": 0.009,
+        "acc_x": 0.0,
+        "acc_y": -0.002,
+        "acc_z": -0.011
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 34,
+      "lap_percentage": 0.029,
+      "deviation_summary": {
+        "rpm": -0.003,
+        "speed": 0.04,
+        "throttle": -0.039,
+        "brake": 0.018,
+        "gear": 0.02,
+        "acc_x": -0.015,
+        "acc_y": 0.009,
+        "acc_z": -0.029
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 384,
+      "lap_percentage": 0.326,
+      "deviation_summary": {
+        "rpm": 0.006,
+        "speed": 0.007,
+        "throttle": 0.011,
+        "brake": -0.004,
+        "gear": 0.002,
+        "acc_x": 0.003,
+        "acc_y": -0.004,
+        "acc_z": 0.005
+      }
+    }
+  ]
+}

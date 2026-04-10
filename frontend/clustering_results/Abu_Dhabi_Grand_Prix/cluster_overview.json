@@ -1,0 +1,85 @@
+{
+  "race": "Abu_Dhabi_Grand_Prix",
+  "clusters": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Cluster 0",
+      "lap_count": 31,
+      "lap_percentage": 0.028,
+      "deviation_summary": {
+        "rpm": -0.003,
+        "speed": -0.012,
+        "throttle": -0.04,
+        "brake": 0.093,
+        "gear": 0.004,
+        "acc_x": 0.031,
+        "acc_y": -0.053,
+        "acc_z": 0.012
+      }
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Cluster 1",
+      "lap_count": 377,
+      "lap_percentage": 0.338,
+      "deviation_summary": {
+        "rpm": -0.0,
+        "speed": 0.014,
+        "throttle": 0.019,
+        "brake": -0.015,
+        "gear": 0.003,
+        "acc_x": 0.005,
+        "acc_y": -0.0,
+        "acc_z": 0.014
+      }
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Cluster 2",
+      "lap_count": 27,
+      "lap_percentage": 0.024,
+      "deviation_summary": {
+        "rpm": 0.033,
+        "speed": 0.055,
+        "throttle": -0.008,
+        "brake": 0.01,
+        "gear": 0.028,
+        "acc_x": -0.008,
+        "acc_y": 0.003,
+        "acc_z": 0.011
+      }
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Cluster 3",
+      "lap_count": 284,
+      "lap_percentage": 0.254,
+      "deviation_summary": {
+        "rpm": -0.001,
+        "speed": -0.009,
+        "throttle": -0.006,
+        "brake": 0.006,
+        "gear": -0.004,
+        "acc_x": -0.002,
+        "acc_y": 0.004,
+        "acc_z": -0.019
+      }
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Cluster 4",
+      "lap_count": 398,
+      "lap_percentage": 0.356,
+      "deviation_summary": {
+        "rpm": -0.001,
+        "speed": -0.009,
+        "throttle": -0.011,
+        "brake": 0.003,
+        "gear": -0.002,
+        "acc_x": -0.006,
+        "acc_y": 0.003,
+        "acc_z": -0.0
+      }
+    }
+  ]
+}
