@@ -361,10 +361,10 @@
 					<div class="team-block">
 						<div class="team-name">Red Bull Racing</div>
 						<button>Verstappen</button>
-						<button>Tsunoda</button>
+						<button>Lawson</button>
 					</div>
 					<div class="team-block">
-						<div class="team-name">Ferrari</div>
+						<div class="team-name">Scuderia Ferrari</div>
 						<button>Leclerc</button>
 						<button>Hamilton</button>
 					</div>
@@ -375,8 +375,8 @@
 					</div>
 					<div class="team-block">
 						<div class="team-name">McLaren</div>
-						<button>Piastri</button>
 						<button>Norris</button>
+						<button>Piastri</button>
 					</div>
 					<div class="team-block">
 						<div class="team-name">Aston Martin</div>
@@ -384,14 +384,14 @@
 						<button>Stroll</button>
 					</div>
 					<div class="team-block">
-						<div class="team-name">Alpine</div>
+						<div class="team-name">Alpine F1 Team</div>
+						<button>Doohan</button>
 						<button>Gasly</button>
-						<button>Colapinto</button>
 					</div>
 					<div class="team-block">
-						<div class="team-name">Williams</div>
-						<button>Sainz</button>
+						<div class="team-name">Williams Racing</div>
 						<button>Albon</button>
+						<button>Sainz</button>
 					</div>
 					<div class="team-block">
 						<div class="team-name">Haas F1 Team</div>
@@ -400,8 +400,8 @@
 					</div>
 					<div class="team-block">
 						<div class="team-name">Racing Bulls</div>
-						<button>Lawson</button>
 						<button>Hadjar</button>
+						<button>Tsunoda</button>
 					</div>
 					<div class="team-block">
 						<div class="team-name">Kick Sauber</div>
@@ -509,14 +509,14 @@
 	  	const selectedDrivers = new Set();
  		const startRoster = {
                         "Red Bull Racing": ["Verstappen", "Lawson"],
-                        "Ferrari": ["Leclerc", "Hamilton"],
+                        "Scuderia Ferrari": ["Leclerc", "Hamilton"],
                         "Mercedes": ["Russell", "Antonelli"],
                         "McLaren": ["Norris", "Piastri"],
                         "Aston Martin": ["Alonso", "Stroll"],
-                        "Alpine": ["Gasly", "Doohan"],
-                        "Williams": ["Sainz", "Albon"],
+                        "Alpine F1 Team": ["Doohan", "Gasly"],
+                        "Williams Racing": ["Sainz", "Albon"],
                         "Haas F1 Team": ["Ocon", "Bearman"],
-                        "Racing Bulls": ["Tsunoda", "Hadjar"],
+                        "Racing Bulls": ["Hadjar", "Tsunoda"],
                         "Kick Sauber": ["Bortoleto", "Hülkenberg"]
                 };
 
@@ -526,121 +526,120 @@
     			});
 		});
 
-	  	driverButtons.forEach(button => {
-		  	button.addEventListener('click', () => {
-			  	const driverName = button.textContent;
-			  	if (selectedDrivers.has(driverName)) {
-				  	selectedDrivers.delete(driverName);
-				  	button.classList.remove('selected');
-				  	const driverBlock = document.getElementById(`driver-${driverName.replace(/\s/g, '-')}`);
-				  	if (charts[driverName]) {
-					  	charts[driverName].destroy();
-					  	delete charts[driverName];
-				  	}
-				  	if (driverBlock) driverBlock.remove();
-			  	} else {
+		// Abbreviations are needed to be assigned to each driver to parse through the driver_distribution.json
+		const driverAbbreviations = {
+			"Verstappen": "VER", "Lawson": "LAW", "Tsunoda": "TSU",
+			"Leclerc": "LEC", "Hamilton": "HAM", "Russell": "RUS", 
+			"Antonelli": "ANT", "Norris": "NOR", "Piastri": "PIA",
+			"Alonso": "ALO", "Stroll": "STR", "Gasly": "GAS", 
+			"Doohan": "DOO", "Colapinto": "COL", "Sainz": "SAI", 
+			"Albon": "ALB", "Ocon": "OCO", "Bearman": "BEA",
+			"Hadjar": "HAD", "Bortoleto": "BOR", "Hülkenberg": "HUL"
+		};
+
+		driverButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				const driverName = button.textContent;
+				if (selectedDrivers.has(driverName)) {
+					selectedDrivers.delete(driverName);
+					button.classList.remove('selected');
+					const driverBlock = document.getElementById(`driver-${driverName.replace(/\s/g, '-')}`);
+					if (charts[driverName]) {
+						charts[driverName].destroy();
+						delete charts[driverName];
+					}
+					if (driverBlock) driverBlock.remove();
+				} else {
 					selectedDrivers.add(driverName);
-	  				button.classList.add('selected');
-					
-					// Create Driver Statistics Panel for selected driver
+					button.classList.add('selected');
+
 					const statsBlock = document.createElement('div');
 					statsBlock.classList.add('driver-stats');
-          				statsBlock.id = `driver-${driverName.replace(/\s/g, '-')}`;
+					statsBlock.id = `driver-${driverName.replace(/\s/g, '-')}`;
 
-          				const nameLabel = document.createElement('h2'); //Name of the selected driver
-          				nameLabel.textContent = driverName;
-          				statsBlock.appendChild(nameLabel);
-					
-					// Create container for the charts that will be in the Driver Statistics Panel
+					const nameLabel = document.createElement('h2');
+					nameLabel.textContent = driverName;
+					statsBlock.appendChild(nameLabel);
+
 					const chartsRow = document.createElement('div');
 					chartsRow.classList.add('charts-row');
 					statsBlock.appendChild(chartsRow);
 
-					// Creates the 6 Pie charts with temp data
-					const pieTitles = [
-  						"Relative Distance",
-  						"RPM",
-  						"Gear",
-  						"Throttle",
-  						"Brake",
-  						"Acceleration"
+					/* ---- Horizontal Bar Chart (lap counts per cluster) ---- */
+					const barWrapper = document.createElement('div');
+					barWrapper.style.cssText = 'width: 300px; height: 220px; flex-shrink: 0;';
+					chartsRow.appendChild(barWrapper);
+
+					const barCanvas = document.createElement('canvas');
+					barCanvas.id = `bar-${driverName}`;
+					barWrapper.appendChild(barCanvas);
+
+					const clusterColors = [
+						'rgba(225, 6, 0, 0.8)',
+						'rgba(0, 92, 230, 0.8)',
+						'rgba(255, 193, 7, 0.8)',
+						'rgba(0, 200, 150, 0.8)',
+						'rgba(180, 0, 230, 0.8)'
 					];
-					
-					for (let i = 0; i < 6; i++) {
-						// We create a wrapper for the pie charts so we can do more sylization, and then put it in the charts row.
-						const pieWrapper = document.createElement('div');
-						pieWrapper.style.cssText = 'width: 200px; height: 200px; flex-shrink: 0;';
-						chartsRow.appendChild(pieWrapper);
 
-						const pieCanvas = document.createElement('canvas');
-						pieCanvas.id = `pie-${driverName}-${i}`;
-						pieWrapper.appendChild(pieCanvas);
-
-						const ctxPie = pieCanvas.getContext('2d');
-						
-						const pieChart = new Chart(ctxPie, {
-							type: 'pie',
-							data: {
-								labels: ['Cluster A', 'Cluster B', 'Cluster C'],
-								datasets: [{
-									data: [
-										Math.random() * 100,
-          									Math.random() * 100,
-          									Math.random() * 100
-									],
-									backgroundColor: [
-										'rgba(225, 6, 0, 0.8)',
-          									'rgba(0, 92, 230, 0.8)',
-          									'rgba(255, 193, 7, 0.8)'
-									]
-								}]
+					const barChart = new Chart(barCanvas.getContext('2d'), {
+						type: 'bar',
+						data: {
+							labels: ['Lap Distribution'],
+							datasets: [0, 1, 2, 3, 4].map(i => ({
+								label: `Cluster ${i}`,
+								data: [0],
+								backgroundColor: clusterColors[i],
+								borderWidth: 0
+							}))
+						},
+						options: {
+							responsive: true,
+							maintainAspectRatio: false,
+							indexAxis: 'y',
+							plugins: {
+								legend: {
+									display: true,
+									labels: { color: '#ccccdd', font: { size: 11 } }
+								},
+								title: {
+									display: true,
+									text: 'Lap Count by Cluster',
+									color: '#ccccdd',
+									font: { size: 14 }
+								}
 							},
-							options: {
-								responsive: true,
-								maintainAspectRatio: false,
-								plugins: {
-                                                                	legend: {
-                                                                        	display: false
-                                                                	},
-									title: {
-										display: true,
-										text: pieTitles[i],
-										color: '#ccccdd',
-										font: {
-											size: 20
-										}
-									}
-
-                                                        	}
+							scales: {
+								x: {
+									stacked: true,
+									ticks: { color: '#555560' },
+									grid: { color: '#2a2a2e' }
+								},
+								y: {
+									stacked: true,
+									ticks: { color: '#555560' },
+									grid: { color: '#2a2a2e' }
+								}
 							}
-						});
-						charts[`${driverName}-pie-${i}`] = pieChart;
-					}
+						}
+					});
+					charts[`${driverName}-bar`] = barChart;
 
-
-          				// Create wrapper for the canvas and then put the radar chart into that canvas
-	  				const radarWrapper = document.createElement('div');
+					/* ---- Radar Chart (lap percentages per cluster) ---- */
+					const radarWrapper = document.createElement('div');
 					radarWrapper.style.cssText = 'width: 260px; height: 260px; flex-shrink: 0;';
 					chartsRow.appendChild(radarWrapper);
 
 					const radarCanvas = document.createElement('canvas');
 					radarCanvas.id = `radar-${driverName}`;
 					radarWrapper.appendChild(radarCanvas);
-	  				
-					const ctxRadar = radarCanvas.getContext('2d');
 
-	  				charts[driverName] = new Chart(ctxRadar, {
+					charts[driverName] = new Chart(radarCanvas.getContext('2d'), {
 						type: 'radar',
 						data: {
-							labels: ['Speed', 'Acceleration', 'Braking', 'Cornering', 'Consistency'],
+							labels: ['Cluster 0', 'Cluster 1', 'Cluster 2', 'Cluster 3', 'Cluster 4'],
 							datasets: [{
-								data: [
-									Math.random() * 100,
-					  				Math.random() * 100,
-					  				Math.random() * 100,
-					  				Math.random() * 100,
-					  				Math.random() * 100
-								],
+								data: [0, 0, 0, 0, 0],
 								fill: true,
 								backgroundColor: 'rgba(225, 6, 0, 0.2)',
 								borderColor: 'rgba(225, 6, 0, 1)',
@@ -651,8 +650,12 @@
 							responsive: true,
 							maintainAspectRatio: false,
 							plugins: {
-								legend: {
-									display: false
+								legend: { display: false },
+								title: {
+									display: true,
+									text: 'Cluster % Distribution',
+									color: '#ccccdd',
+									font: { size: 14 }
 								}
 							},
 							scales: {
@@ -660,25 +663,25 @@
 									beginAtZero: true,
 									min: 0,
 									max: 100,
-									ticks: {
-										color: '#555560',
-										backdropColor: 'transparent'
-									},
-									grid: {
-										color: '#2a2a2e'
-									},
-									pointLabels: {
-										color: '#ccccdd'
-									}
+									ticks: { color: '#555560', backdropColor: 'transparent' },
+									grid: { color: '#2a2a2e' },
+									pointLabels: { color: '#ccccdd' }
 								}
 							}
 						}
 					});
+
 					middlePanel.appendChild(statsBlock);
 
+					// Load real data if a track is selected 
+					const selectedValue = trackSelect.value;
+					if (selectedValue !== 'default') {
+						loadDriverData(selectedValue, driverName, barChart, charts[driverName]);
+					}
 				}
 			});
 		});
+
 
 		// Map Visualization portion
 
@@ -790,6 +793,15 @@
 				console.error('Failed to load track summary:', err);
 				summaryPanel.style.display = 'none';
 			}
+
+			// Refresh chart data for any drivers that have already been selected
+			selectedDrivers.forEach(driverName => {
+				const barChart = charts[`${driverName}-bar`];
+				const radarChart = charts[driverName];
+				if (barChart && radarChart) {
+					loadDriverData(selectedValue, driverName, barChart, radarChart);
+				}
+			});
 		}
 
 		// Event Listeners to handle when the dropped laps data is clicked or hovered, specifically so it can be seen on mobile devices
@@ -819,26 +831,64 @@
 		});
 
 
+		// Function to load in the driver distribution data needed to fill the statistic blocks for each driver
+		async function loadDriverData(raceName, driverName, barChart, radarChart) {
+			const abbr = driverAbbreviations[driverName];
+			if (!abbr) return;
+
+			try {
+				const response = await fetch(`/clustering_results/${raceName}/driver_distribution.json`);
+				const allDrivers = await response.json();
+
+				const driverData = allDrivers.find(d => d.driver === abbr);
+				if (!driverData) {
+					console.warn(`No data found for ${abbr} in ${raceName}`);
+					return;
+				}
+
+				const counts = [0, 0, 0, 0, 0];
+				const percentages = [0, 0, 0, 0, 0];
+
+				driverData.cluster_distribution.forEach(c => {
+					counts[c.cluster_id] = c.lap_count;
+					percentages[c.cluster_id] = Math.round(c.lap_percentage * 100);
+				});
+
+				barChart.data.datasets.forEach((dataset, i) => {
+					dataset.data = [counts[i]];
+				});
+				barChart.update();
+
+				radarChart.data.datasets[0].data = percentages;
+				radarChart.update();
+
+			} catch (err) {
+				console.error(`Failed to load driver data for ${driverName}:`, err);
+			}
+		}
+
+
 		// Event Listener for when a track is selected, in order to update the drivers to match that race
 		trackSelect.addEventListener('change', (e) => {
-			const raceIndex = e.target.selectedIndex;
+			const selectedValue = e.target.value;
                 	let activeRoster = {...startRoster};
 
-			/* From round 3 (Japan, index 3) onwards:
-           		Tsunoda moves to Red Bull, Lawson to Racing Bulls */
-			if (raceIndex >= 3) {
-                        	activeRoster["Red Bull Racing"] = ["Verstappen", "Tsunoda"];
-                        	activeRoster["Racing Bulls"] = ["Lawson", "Hadjar"];
-                	}
-			/* From round 7 (Imola, index 7) onwards:
-           		Colapinto replaces Doohan at Alpine */
-			if (raceIndex >= 7) {
-                        	activeRoster["Alpine"] = ["Gasly", "Colapinto"];
-                	}
+			const before_round3 = ['Australian_Grand_Prix', 'Chinese_Grand_Prix'];
+			const before_round7 = ['Australian_Grand_Prix', 'Chinese_Grand_Prix', 'Japanese_Grand_Prix',
+					       'Bahrain_Grand_Prix', 'Saudi_Arabian_Grand_Prix', 'Miami_Grand_Prix'];
+
+			if (!before_round3.includes(selectedValue)) {
+				activeRoster["Red Bull Racing"] = ["Verstappen", "Tsunoda"];
+				activeRoster["Racing Bulls"] = ["Hadjar", "Lawson"];
+			}
+
+			if (!before_round7.includes(selectedValue)) {
+				activeRoster["Alpine F1 Team"] = ["Colapinto", "Gasly"];
+			}
 
 			document.querySelectorAll('.team-block').forEach(block => {
-                        	const teamName = block.querySelector('.team-name').innerText.trim();
-                        	const drivers = activeRoster[teamName];
+				const teamName = block.querySelector('.team-name').innerText.trim();
+				const drivers = activeRoster[teamName] || activeRoster[Object.keys(activeRoster).find(k => k.toUpperCase() === teamName)];
                         	if (drivers) {
                                 	const buttons = block.querySelectorAll('button');
                                 	if (buttons.length >= 2) {
@@ -848,7 +898,6 @@
                         	}
                 	});
 
-			const selectedValue = e.target.value;
                 	const mapContainer = document.getElementById('map-container');
                 	const placeholder = document.getElementById('map-placeholder');
 
