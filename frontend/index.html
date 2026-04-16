@@ -190,7 +190,7 @@
 
 		.cluster-overview {
 			display: none;
-			margin-top: 10px;
+			margin: 10px;
 			background: #18181c;
 			border: 1px solid #2a2a2e;
 			border-radius: 8px;
@@ -239,8 +239,10 @@
 		}
 
 		.cluster-meta {
-			font-size: 10px;
-			color: #555560;
+			font-size: 20px;
+			font-weight: 700;
+			font-family: Arial, sans-serif;
+			color: #ffffff;
 			letter-spacing: 0.08em;
 			text-transform: uppercase;
 			margin-left: auto;
@@ -557,11 +559,11 @@
 				<div class="cluster-overview-header">
 					<div class="cluster-overview-title">Cluster Overview</div>
 					<select id="cluster-select" class="cluster-dropdown">
-						<option value="0">Cluster 0</option>
-						<option value="1">Cluster 1</option>
-						<option value="2">Cluster 2</option>
-						<option value="3">Cluster 3</option>
-						<option value="4">Cluster 4</option>
+						<option value="0">Cluster 1</option>
+						<option value="1">Cluster 2</option>
+						<option value="2">Cluster 3</option>
+						<option value="3">Cluster 4</option>
+						<option value="4">Cluster 5</option>
 					</select>
 					<div class="cluster-meta" id="cluster-meta">—</div>
 				</div>
@@ -892,6 +894,7 @@
 				dropNan.textContent = data.drop_reasons.nan_detection;
 
 				summaryPanel.style.display = 'block';
+				loadClusterOverview(selectedValue);
 			} catch (err) {
 				console.error('Failed to load track summary:', err);
 				summaryPanel.style.display = 'none';
@@ -972,11 +975,100 @@
 
 
 		// Cluster overview section here
-		//
-		//
-		//
-		//
-		//
+		let clusterOverviewData = null;
+		let clusterDeviationChart = null;
+
+		async function loadClusterOverview(raceName) {
+			const panel = document.getElementById('cluster-overview');
+			if (clusterDeviationChart) {
+				clusterDeviationChart.destroy();
+				clusterDeviationChart = null;
+			}
+			clusterOverviewData = null;
+
+			try {
+				const response = await fetch(`/clustering_results/${raceName}/cluster_overview.json`);
+				clusterOverviewData = await response.json();
+
+				panel.style.display = 'block';
+				document.getElementById('cluster-select').value = '0';
+				displayClusterChart(0);
+			} catch (err) {
+				console.error('Failed to load cluster overview:', err);
+				panel.style.display = 'none';
+			}
+		}
+
+		function displayClusterChart(clusterId) {
+			if (!clusterOverviewData) return;
+			
+			const cluster = clusterOverviewData.clusters.find(c => String(c.cluster_id) === String(clusterId));
+			if (!cluster) return;
+
+			const metaEl = document.getElementById('cluster-meta');
+			metaEl.textContent = `${cluster.lap_count} laps · ${Math.round(cluster.lap_percentage * 100)}%`;
+
+			const metrics = ['RPM', 'Speed', 'Throttle', 'Brake', 'Gear', 'Acc X', 'Acc Y', 'Acc Z'];
+			const keys =    ['rpm', 'speed', 'throttle', 'brake', 'gear', 'acc_x', 'acc_y', 'acc_z'];
+			const values = keys.map(k => cluster.deviation_summary[k]);
+			const barColors = values.map(v => v >= 0 ? 'rgba(0, 200, 150, 0.8)' : 'rgba(225, 6, 0, 0.8)');
+			
+			if (clusterDeviationChart) {
+				clusterDeviationChart.data.datasets[0].data = values;
+				clusterDeviationChart.data.datasets[0].backgroundColor = barColors;
+				clusterDeviationChart.update();
+				return;
+			}
+			
+			const ctx = document.getElementById('cluster-deviation-chart').getContext('2d');
+			clusterDeviationChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: metrics,
+					datasets: [{
+						data: values,
+						backgroundColor: barColors,
+						borderWidth: 0
+					}]
+				},
+				options: {
+					indexAxis: 'y',
+					responsive: true,
+					maintainAspectRatio: false,
+					plugins: {
+						legend: { display: false },
+						tooltip: {
+							callbacks: {
+								label: ctx => (ctx.raw >= 0 ? '+' : '') + ctx.raw.toFixed(3)
+							}
+						}
+					},
+					scales: {
+						x: {
+							min: -0.2,
+							max: 0.2,
+							ticks: {
+								color: '#555560',
+								font: { size: 10 },
+								callback: v => v === 0 ? '0' : (v > 0 ? '+' + v.toFixed(2) : v.toFixed(2))
+							},
+							grid: {
+								color: ctx => ctx.tick.value === 0 ? '#555560' : '#1e1e22'
+							}
+						},
+						y: {
+							ticks: { color: '#ccccdd', font: { size: 11 } },
+							grid: { color: '#1e1e22' }
+						}
+					}
+				}
+			});
+		}
+
+		// Event Listener for the above cluser overview charts
+		document.getElementById('cluster-select').addEventListener('change', (e) => {
+			displayClusterChart(e.target.value);
+		});
 
 
 		// Event Listener for when a track is selected, in order to update the drivers to match that race
@@ -1016,6 +1108,7 @@
                         	mapContainer.style.display = 'none';
                         	placeholder.style.display = 'flex';
 				document.getElementById('track-summary').style.display = 'none';
+				document.getElementById('cluster-overview').style.display = 'none';
                         	return;
                 	}
 
