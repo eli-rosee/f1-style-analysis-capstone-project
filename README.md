@@ -6,7 +6,7 @@ Formula 1 is one of the most data-driven sports in the world, yet one key factor
 ## Architecture
 1) Data Processing Layer
 
-    A Python scraper is used to ingest F1 telemetry data from TracingInsights.com. The data is downloaded as a JSON file and stored into a PostgreSQL database.
+    A Python scraper is used to ingest F1 telemetry data from: [TracingInsights.com](https://tracinginsights.com/). The data is downloaded as a JSON file and stored into a PostgreSQL database.
 
 2) Analytics and Clustering Layer
 
@@ -35,3 +35,5 @@ The codebase is divided into three main folders, each containing code for a spec
 - frontend
     - Web Front End
     - Data Visualization
+
+### [F1 Visual Dashboard](https://uark-team6-f1-visual-dashboard.site/)
