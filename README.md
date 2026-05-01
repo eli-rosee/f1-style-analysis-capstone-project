@@ -25,7 +25,7 @@ This project utilizes Python and several Python libraries. In the same folder as
 The codebase is divided into three main folders, each containing code for a specific stage of the data pipeline.
 - data_ingestion
   - Data Scraping (from TracingInsights.com)
-  - Data Preprocessing
+  - Storing data in a PostgreSQL database
 - data_analysis
   - Normalization
     - Outlier Detection (IQR)
@@ -34,3 +34,4 @@ The codebase is divided into three main folders, each containing code for a spec
   - Saving Clustering results as JSON files
 - frontend
     - Web Front End
+    - Data Visualization
